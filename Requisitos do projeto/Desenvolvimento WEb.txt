@@ -1,0 +1,31 @@
+Trabalho Final
+
+Desenvolvimento Web em HTML, CSS, Javascript e PHP
+
+Objetivo
+
+Desenvolver um Sistema Web usando as tecnologias HTML, CSS, Javascript e PHP sobre algum assunto com tema livre, por exemplo, um sistema de Biblioteca, Cinema, Eventos, Vendas, etc.
+
+Regras
+
+O trabalho pode ser desenvolvido em grupos de 2 a 5 pessoas. 
+Deve ser criado um vídeo mostrando e explicando as funções do sistema Web desenvolvido.
+Os códigos devem estar disponíveis em Github (preferencialmente) ou drive de armazenamento nas nuvens. Fique atento para dar as devidas permissões de acesso ao professor.
+Entregar um documento em PDF contendo os links para os vídeos e dos códigos do Sistema Web.
+Cada aluno do grupo deve explicar pelo menos um trecho do código por meio de comentários, Esse item vai servir como uma avaliação individual de cada membro do grupo.
+
+de acesso ao professor.
+Entregar um documento em PDF contendo os links para os vídeos e dos códigos do Sistema Web.
+Cada aluno do grupo deve explicar pelo menos um trecho do código por meio de comentários. Esse item vai servir como uma avaliação individual de cada membro do grupo
+Somente um aluno deve entregar o trabalho, o qual deve identificar os nomes e as matrículas de todos os membros do grupo.
+Não será permitido uso de nenhum tipo de framework, podendo ser descontado pontos.
+Não será tolerado plágio ou cópia de trabalhos prontos, podendo ser zerado. Trabalhos iguais entre grupos diferentes terão pontos descontados e poderão ser zerados.
+
+Requisitos do Sistema Web
+O sistema contém 5 páginas Web (HTML) [1 ponto].
+As páginas estão devidamente estilizadas (usando CSS) [1 ponto].
+O sistema possui um menu de navegação entre as páginas [1 ponto].
+As páginas possuem ilustrações (imagens e textos apropriados) e algumas interações (Javascript) de acordo com o tema escolhido [1 ponto].
+A página possui um formulário de cadastro de informações contendo pelo menos 5 campos de entrada de dados e botão para salvar as informações em banco de dados(PHP)[2 pontos].
+O formulário valida os dados de entrada(em JS) indicando ao usuário a forma correta de inserir os dados nos campos por meio de mensagens interativas(JS E CSS) e impedindo o usuário de prosseguir sem preencher os campos corretamente(JS).[2 pontos]
+
