@@ -5,7 +5,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #2d2f34;
+    background-color: #2c2e34;
     font-family: "Ponppins", sans-serif;
 }
 
@@ -23,7 +23,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 20px 15px;
-    background-color: #202022;
+    background-color: #222224;
 }
 
 .logotipo{
