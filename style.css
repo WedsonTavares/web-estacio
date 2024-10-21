@@ -74,7 +74,7 @@ button:hover{
 
 @media (max-width: 480px) {
     li, a, button {
-        font-size: 12px; /* Ajuste o tamanho da fonte para telas menores */
+        font-size: 10px; /* Ajuste o tamanho da fonte para telas menores */
     }
     .logotipo {
         color: #fff;
