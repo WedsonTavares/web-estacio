@@ -11,6 +11,7 @@ body{
     background-image: url("original.jpeg");
     max-width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 li, a, button{
