@@ -5,8 +5,12 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #2c2e34;
+    /*background-color: #2c2e34;*/
     font-family: "Ponppins", sans-serif;
+    background: linear-gradient(to right, #055f6eff, #052131ff);
+    background-image: url("original.jpeg");
+    max-width: 100%;
+    background-size: cover;
 }
 
 li, a, button{
@@ -19,6 +23,7 @@ li, a, button{
 
 /*Estilizando o header*/
 header{
+    background: linear-gradient(to right, #055f6eff, #052131ff);
     display: flex;
     justify-content: flex-end;
     align-items: center;
