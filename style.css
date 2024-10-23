@@ -8,7 +8,7 @@ body{
     /*background-color: #2c2e34;*/
     font-family: "Ponppins", sans-serif;
     background: linear-gradient(to right, #055f6eff, #052131ff);
-    background-image: url("original.jpeg");
+    background-image: url("/assets/original.jpeg");
     max-width: 100%;
     background-size: cover;
 }
@@ -30,10 +30,29 @@ header{
     padding: 20px 15px;
     background-color: #222224;
 }
+.nav-equerda {
+    display: flex;
+    align-items: center;
+    margin-right: 20rem ;
+    
+}
+
+.nav-equerda label {
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.nav-equerda select {
+    color: #070505;
+    margin-right: 70px;
+    font-weight: bold;
+}
 
 .logotipo{
     color: #fff;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     margin-right: auto;
 }
@@ -44,7 +63,7 @@ header{
 
 .nav-links li{
     display: inline-block;
-    margin-left: 0px 20px;
+    margin-left: 0px 30px;
 }
 
 .nav-links li a:hover{
@@ -58,7 +77,10 @@ button{
     border: none;
     border-radius: 60px;
     cursor: pointer;
-    margin-left: 15px;
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    
 }
 button:hover{
     background-color: #39619c;
@@ -83,7 +105,7 @@ button:hover{
     }
     .logotipo {
         color: #fff;
-        font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+        font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
         font-weight: bold;
     }
 }
