@@ -100,6 +100,7 @@ button:hover {
     font-size: 24px;
     cursor: pointer;
 }
+.exemplos{}
 
 /* Estilos responsivos para telas menores que 768px */
 @media (max-width: 768px) {
@@ -120,6 +121,9 @@ button:hover {
 
     .menu-toggle {
         display: block; /* Exibe o botão de menu */
+    }
+    .exemplos{
+        max-width: 100%;
     }
 }
 
@@ -151,5 +155,8 @@ button:hover {
         width: 80%; /* Ajusta a largura do botão para 80% da tela */
         left: 50%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajusta a posição para centralizar */
+    }
+    .exemplos{
+        max-width: 100%;
     }
 }
