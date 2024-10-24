@@ -12,20 +12,8 @@ body {
     background-attachment: fixed;
     height: 100vh;
 }
-button{
-    background-color: #055f6e; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    position: fixed; /* Posiciona o botão de forma fixa */
-    bottom: 20px; /* Define a distância do botão em relação ao fundo da página */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição para centralizar */
-}
 
-li, a{
+li, a {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     color: white;
@@ -43,11 +31,26 @@ header {
     position: relative;
 }
 
+button {
+    background-color: #055f6e; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    position: fixed; /* Posiciona o botão de forma fixa */
+    bottom: 20px; /* Define a distância do botão em relação ao fundo da página */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
+}
+
+button:hover {
+    background-color: #052131; /* Cor de fundo do botão ao passar o mouse */
+}
+
 .logotipo {
     font-size: 25px;
     font-weight: bold;
-    color: white;
-    margin-right: 20px;
 }
 
 .nav-equerda {
@@ -142,5 +145,11 @@ header {
         font-size: 14px; /* Ajusta o tamanho da fonte dos labels e selects */
         margin-right: 0; /* Remove a margem direita */
         margin-bottom: 10px; /* Adiciona margem inferior para espaçamento */
+    }
+
+    button {
+        width: 80%; /* Ajusta a largura do botão para 80% da tela */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta a posição para centralizar */
     }
 }
