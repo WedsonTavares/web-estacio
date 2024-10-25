@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: linear-gradient(to right, #055f6eff, #052131ff);
+    background: linear-gradient(to right, #055f6eff, #052131ff);
     background-image: url("/assets/original.jpeg");
     max-width: 100%;
     background-size: cover;
@@ -13,6 +13,7 @@ body {
     min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 li, a {
@@ -108,11 +109,11 @@ button:hover {
     
     margin-top: auto; /* Empurra a div para o fim da página */
     width: 100%; /* Garante que a div ocupe toda a largura */
-    background-color: #333; /* Cor de fundo para a div-contato */
     color: white; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno */
+    padding: 100px;/* Espaçamento interno */
     text-align: right; /* Centraliza o texto */
     background: linear-gradient(to right, #055f6eff, #052131ff);
+    height: 100%;
 }
 
 .contato {
@@ -180,5 +181,14 @@ button:hover {
     }
 }
 main {
-    background-color: linear-gradient(to left, #055f6eff, #052131ff);
+    background: linear-gradient(to right, #055f6eff, #052131ff);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+}
+.suporte{
+    height: 100%;
 }
