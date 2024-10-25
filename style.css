@@ -10,7 +10,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 li, a {
@@ -100,7 +102,30 @@ button:hover {
     font-size: 24px;
     cursor: pointer;
 }
-.exemplos{}
+
+/* Estilizando a div-contato */
+.div-contato {
+    
+    margin-top: auto; /* Empurra a div para o fim da página */
+    width: 100%; /* Garante que a div ocupe toda a largura */
+    background-color: #333; /* Cor de fundo para a div-contato */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: right; /* Centraliza o texto */
+    background: linear-gradient(to right, #055f6eff, #052131ff);
+}
+
+.contato {
+    list-style: none;
+    padding: 0;
+    margin-right: 30px;
+    display: flex;
+    justify-content: right;
+    gap: 10px ; /* Espaçamento entre os itens */
+}
+.img-contato {
+    max-width: 30px;
+}
 
 /* Estilos responsivos para telas menores que 768px */
 @media (max-width: 768px) {
@@ -121,9 +146,6 @@ button:hover {
 
     .menu-toggle {
         display: block; /* Exibe o botão de menu */
-    }
-    .exemplos{
-        max-width: 100%;
     }
 }
 
@@ -155,8 +177,5 @@ button:hover {
         width: 80%; /* Ajusta a largura do botão para 80% da tela */
         left: 50%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajusta a posição para centralizar */
-    }
-    .exemplos{
-        max-width: 100%;
     }
 }
