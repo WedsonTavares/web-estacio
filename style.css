@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(to right, #055f6eff, #052131ff);
+    background-color: linear-gradient(to right, #055f6eff, #052131ff);
     background-image: url("/assets/original.jpeg");
     max-width: 100%;
     background-size: cover;
@@ -178,4 +178,7 @@ button:hover {
         left: 50%; /* Centraliza horizontalmente */
         transform: translateX(-50%); /* Ajusta a posição para centralizar */
     }
+}
+main {
+    background-color: linear-gradient(to left, #055f6eff, #052131ff);
 }
