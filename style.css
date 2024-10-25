@@ -94,20 +94,13 @@ button:hover {
     background-color: #555;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-}
+
 
 /* Estilizando a div-contato */
 .div-contato {
     
     margin-top: auto; /* Empurra a div para o fim da página */
-    width: 100%; /* Garante que a div ocupe toda a largura */
+    
     background-color: #333; /* Cor de fundo para a div-contato */
     color: white; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
@@ -127,58 +120,7 @@ button:hover {
     max-width: 30px;
 }
 
-/* Estilos responsivos para telas menores que 768px */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Esconde o menu por padrão */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #444;
-        border-radius: 5px;
-        padding: 10px;
-    }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block; /* Exibe o botão de menu */
-    }
-}
-
-/* Estilos responsivos para telas menores que 468px */
-@media (max-width: 468px) {
-    header {
-        flex-direction: column; /* Alinha os itens verticalmente */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    .logotipo {
-        font-size: 20px;
-        margin-bottom: 10px; /* Adiciona margem inferior para espaçamento */
-    }
-
-    .nav-equerda {
-        flex-direction: column; /* Alinha os itens verticalmente */
-        align-items: center; /* Centraliza os itens */
-        margin-left: 0; /* Remove a margem esquerda */
-    }
-
-    .nav-equerda label, .nav-equerda select {
-        font-size: 14px; /* Ajusta o tamanho da fonte dos labels e selects */
-        margin-right: 0; /* Remove a margem direita */
-        margin-bottom: 10px; /* Adiciona margem inferior para espaçamento */
-    }
-
-    button {
-        width: 80%; /* Ajusta a largura do botão para 80% da tela */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translateX(-50%); /* Ajusta a posição para centralizar */
-    }
-}
-main {
+main .suporte {
     background-color: linear-gradient(to left, #055f6eff, #052131ff);
 }
