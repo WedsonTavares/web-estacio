@@ -66,7 +66,6 @@ button:hover {
 
 .logotipo img {
   width: 200px;
-  
 }
 .nav-equerda {
   display: flex;
@@ -80,6 +79,7 @@ button:hover {
   margin-right: 10px;
   font-weight: bold;
   font-size: 18px;
+  margin-left: 30px;
 }
 
 .nav-equerda select {
@@ -89,6 +89,7 @@ button:hover {
   padding: 5px; /* Adiciona padding ao select */
   border-radius: 5px; /* Adiciona bordas arredondadas */
   border: 1px solid #ccc; /* Adiciona borda ao select */
+  width: 50px;
 }
 
 .nav-links {
