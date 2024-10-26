@@ -1,21 +1,9 @@
 /* Resetando os padrões css da página e adicionando fontes */
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
     background: linear-gradient(to right, #055f6eff, #052131ff);
-    background-image: url("/assets/original.jpeg");
-    max-width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     height: 100%;
 }
-
 li, a {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
@@ -106,11 +94,8 @@ button:hover {
 
 /* Estilizando a div-contato */
 .div-contato {
-    
-    margin-top: auto; /* Empurra a div para o fim da página */
     width: 100%; /* Garante que a div ocupe toda a largura */
     color: white; /* Cor do texto */
-    padding: 100px;/* Espaçamento interno */
     text-align: right; /* Centraliza o texto */
     background: linear-gradient(to right, #055f6eff, #052131ff);
     height: 100%;
@@ -190,5 +175,47 @@ main {
     background-size: cover;
 }
 .suporte{
+    background-color:darkslategrey;
+    width: 100%;
     height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sup_duvida{
+    background: linear-gradient(to right, #055f6eff, #052131ff);
+    padding: 15px;
+    height: 50%;
+    width: 150px;
+}
+.sup_duvida:hover{
+    background:#055f6eff;
+}
+.sup_problema{
+    background: linear-gradient(to right, #055f6eff, #052131ff);
+    padding: 15px;
+    height: 50%;
+    width: 150px;
+}
+.sup_problema:hover{
+    background:#055f6eff;
+}
+.sup_fale{
+    background: linear-gradient(to right, #055f6eff, #052131ff);
+    padding: 15px;
+    height: 50%;
+    width: 150px;
+}
+.sup_fale:hover{
+    background:#055f6eff;
+}
+.container_sup {
+    background-color: darkslategrey;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.cont_sup{
+    background-color:darkslategrey;
+    padding: 15px;
 }
