@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <img class="exemplos" src="assets/Login.png" alt="">
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logotipo">
+        <img src="assets/logo2 .png" alt="" />
+      </div>
+
+      <nav class="nav-equerda">
+        <label for="buscar">Buscar</label>
+        <select name="buscar" id="">
+          <option value="buscar"></option>
+          <option value="buscar">Animes</option>
+          <option value="buscar">Filmes</option>
+          <option value="buscar">Series</option>
+          <option value="buscar">Jogos</option>
+        </select>
+        <label for="noticias">Notícias</label>
+        <select name="noticias" id="noticias">
+          <option value="noticias"></option>
+          <option value="noticias">Todas as notícias</option>
+          <option value="noticias">Eventos e experiências</option>
+        </select>
+      </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a target="_blank" href="sobre.html">Sobre</a></li>
+          <li>
+            <a target="_blank" href="login.html">
+              <span>Login</span>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="#"
+              ><img src="assets/loupe (1).png" alt=""
+            /></a>
+          </li>
+          <li><a target="_blank" href="assets/cadastro.png">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Login</h1>
+    <form>
+      <label for="email"> E-mail:</label><br />
+      <input type="email" id="email" placeholder="Digite seu e-mail" />
+
+      <br /><br />
+
+      <label for="password">Senha:</label><br />
+      <input type="password" id="password" placeholder="Digite sua senha" />
+
+      <br /><br />
+
+      <button type="submit">Acessar Conta</button>
+    </form>
+    <div class="div-contato">
+        <button class="btn-suporte">
+          <a id="suporte" target="_blank" href="suport.html">Suporte</a>
+        </button>
+        <ul class="contato">
+          <li>Entre em contato:</li>
+          <li>
+            <a href=""
+              ><img class="img-contato" src="assets/linkedin (1).png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="img-contato" src="assets/github.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="img-contato" src="assets/whatsapp.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+  
+      <script src="script.js"></script>
+  </body>
 </html>
