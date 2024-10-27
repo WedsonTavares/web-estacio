@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      
+        <div class="logotipo">
+            <img src="assets/logo2 .png" alt="" />
+        </div>
+      
+      <nav class="nav-equerda">
+        <label for="buscar">Buscar</label>
+        <select name="buscar" id="">
+          <option value="buscar"></option>
+          <option value="buscar">Animes</option>
+          <option value="buscar">Filmes</option>
+          <option value="buscar">Series</option>
+          <option value="buscar">Jogos</option>
+        </select>
+        <label for="noticias">Notícias</label>
+        <select name="noticias" id="noticias">
+          <option value="noticias"></option>
+          <option value="noticias">Todas as notícias</option>
+          <option value="noticias">Eventos e experiências</option>
+        </select>
+      </nav>
+      <nav>
+        <ul class="nav-links">
+          <li><a target="_blank" href="sobre.html">Sobre</a></li>
+          <li><a target="_blank" href="login.html">Login</a></li>
+          <li>
+            <a target="_blank" href="#"
+              ><img src="assets/loupe (1).png" alt=""
+            /></a>
+          </li>
+          <li><a target="_blank" href="assets/cadastro.png">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+        
+    </p>
+    <fieldset style="max-width: 800px; border: none;">
+      <h1>Cadastre-se</h1>  
+    <form>
+        <label for="nome"></label><br>
+        <input placeholder="Nome Comleto" type="text" id="name1" name="Nome" required>
+    </form>
+    <form>
+        <label for="E-mail"></label><br>
+        <input placeholder="E-mail" type="text" id="name2" name="Sobrenome" required>
+    </form>
+    <form>
+        <label for="CEP"></label><br>
+        <input placeholder="CEP" type='number' id='CEP' name='CEP' required>
+        <label for="Número"></label>
+        <input placeholder="Numero" type="number" id="fone" name="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="11 99999-9999" maxlength="11">
+    </form><br>
+   
+
+    <form>
+   
+            
+        
+        <label for="Rua"></label>
+        <input placeholder="Rua" type="text" id="cpf" name="CPF" maxlength="14" onkeyup="this.value=formatarCPF(this.value)">
+        <label for="Bairro"></label>
+        <input placeholder="Bairro" type="text" id="bairro" name="bairro" required>
+    </form>
+    <form>
+        <label for="telefone"></label><br>
+        <input placeholder="Telefone " type="tel" id="telefone" name="telefone" autocomplete="tel"
+        pattern="´`[0-9]{2}()[0-9]{5}-[0-9]$" required>
+    </form>
+    <form>
+        <label for="CPF"></label><br>
+        <input placeholder="CPF " type="number" id="CPF" nome="CPF" required>
+    </form>
+    <form>
+        <p>Qual seu Sexo</p>
+        <input type="radio" id="Masculino" name="sexo" value="homem">
+        <label for="Masculino">Masculino</label>
+        <input type="radio" id="Feminino" name="sexo" value="Feminino">
+        <label for="Feminino">Feminino</label>
+        <input type="radio" id="Prefiro não falar" name="sexo" value="Prefiro não falar">
+        <label for="Prefiro não falar">Prefiro não falar</label><br>
+    </form>
+       <br> <form id="registerForm" onsubmit="return validatePassword()">
+        <label for="password"></label>
+        <input placeholder="senha" type="password" id="password" name="password" required><br>
+
+        <br><label for="confirmPassword"></label>
+        <input placeholder="Cnnfirme a senha" type="password" id="confirmPassword" name="confirmPassword" required><br>
+    
+            <br><button type="submit">Registrar</button>
+            <p id="message"></p> <!-- Exibe a mensagem de erro/sucesso -->
+    </fieldset>
+    </form>
+    <div class="div-contato">
+        <button>
+          <a id="suporte" target="_blank" href="suport.html">Suporte</a>
+        </button>
+        <ul class="contato">
+          <li>Entre em contato:</li>
+          <li>
+            <a href=""
+              ><img class="img-contato" src="assets/linkedin (1).png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="img-contato" src="assets/github.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img class="img-contato" src="assets/whatsapp.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
