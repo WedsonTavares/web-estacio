@@ -201,6 +201,7 @@ main {
  width: 790px; border: none;
  height: 550px;
 margin-bottom: 200px;
+margin-left: 810px;
 align-items: center;
 color: #fff;
 background-color: #055f6e;
@@ -215,7 +216,7 @@ font-size: 20px;
   background-color: #108296;
   text-align: center;
   margin-bottom: 205px;
-  margin-left: 280px;
+  margin-left: 1130px;
   padding: 10px 20px; /* Adiciona espaçamento interno */
   border-radius: 5px; /* Adiciona bordas arredondadas */
   cursor: pointer; /* Muda o cursor para mãozinha */
