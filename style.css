@@ -195,3 +195,38 @@ main {
   background-color: darkslategrey;
   align-content: center;
 }
+
+.form
+{text-align: center;
+ width: 790px; border: none;
+ height: 550px;
+margin-bottom: 200px;
+align-items: center;
+color: #fff;
+background-color: #055f6e;
+border-radius: 20px;
+font-size: 20px;
+
+
+}
+
+#btnform {
+  color: #0c0c0c;
+  background-color: #108296;
+  text-align: center;
+  margin-bottom: 205px;
+  margin-left: 280px;
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para mãozinha */
+  transition: all 0.3s ease; /* Suave transição para o efeito hover */
+}
+
+/* Efeito hover */
+#btnform:hover {
+  background-color: #099e71; /* Cor mais escura no hover */
+  color: #ffffff; /* Muda a cor do texto no hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao redor do botão */
+  transform: translateY(-2px); /* Elevação leve do botão */
+}
+
