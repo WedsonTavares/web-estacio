@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastre-se</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-      
-        <div class="logotipo">
-            <img src="assets/logo2 .png" alt="" />
-        </div>
-      
+      <div class="logotipo">
+        <img src="assets/logo2 .png" alt="" />
+      </div>
+
       <nav class="nav-equerda">
         <label for="buscar">Buscar</label>
         <select name="buscar" id="">
@@ -44,112 +43,136 @@
       </nav>
     </header>
 
-    
-        
-    </p>
+    <h1 style="text-align: center">Cadastre-se</h1>
 
-    <h1 style="text-align: center;">Cadastre-se</h1>
-    
-    
-        <form class="form">
-
-    <fieldset style="max-width: 800px; border: none;">
-      <h1>Cadastre-se</h1>  
-    <form>
-        <label for="nome"></label><br>
-        <input placeholder="Nome Completo" type="text" id="name1" name="Nome" required>
-        <span></span>
-    </form>
-    <form>
-        <label for="E-mail"></label><br>
-        <input placeholder="E-mail" type="text" id="name2" name="Sobrenome" required>
-    </form>
-    <form>
-        <label for="CEP"></label><br>
-        <input placeholder="CEP" type='number' id='CEP' name='CEP' required>
-        <label for="Número"></label>
-        <input placeholder="Numero" type="number" id="fone" name="fone" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="11 99999-9999" maxlength="11">
-    </form><br>
-   
-
-    <form>
-   
-
-            
-        
-    
-        <label for="nome">Nome Completo</label><br>
-        <input placeholder="Nome Comleto" type="text" id="name1" name="Nome" required><br>
-    
-        <label for="E-mail">E-Mail</label><br>
-        <input placeholder="exemplo@email.com" type="email" id="name2" name="Sobrenome" required>
-   <br>
-        <br><label for="CEP">CEP</label>
-        <input placeholder="11111-111" type='number' id='CEP' name='CEP' required>
-       
-        <label for="Número">Número</label>
-        <input placeholder="Número" type="number" id="Numero" name="Numero" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="11 99999-9999" maxlength="11">
-    <br>
-   
-
-    
-   
-        <br>    
-        
-        <label for="Rua" >Rua</label>
-        <input placeholder="Rua Exemplo" type="text" id="Rua" name="Rua" maxlength="14" onkeyup="this.value=formatarCPF(this.value)">
-        <label for="Bairro">Bairro</label>
-        <input placeholder="Bairro Exemplo" type="text" id="Bairro" name="Bairro" required>
-   <br>
-        <br><label for="telefone">Telefone</label>
-        <input placeholder="(XX) XXXXX-XXXX " type="tel" id="telefone" name="telefone" autocomplete="tel"
-        pattern="´`[0-9]{2}()[0-9]{5}-[0-9]$" required><br>
-   
-        <br><label for="CPF">CPF</label>
-        <input placeholder="CPF " type="number" id="CPF" nome="CPF" required><br>
-   <br>
-        <p>Qual seu Sexo</p>
-        <input type="radio" id="Masculino" name="Sexo" value="Masculino">
-        <label for="Masculino">Masculino</label><br>
-        <input type="radio" id="Feminino" name="Sexo" value="Feminino">
-        <label for="Feminino">Feminino</label><br>
-        
-        
-        
-       <br> <form id="registerForm" onsubmit="return validatePassword()">
-        <label for="password"></label>
-        <input placeholder="Senha" type="password" id="password" name="password" required><br>
-
-        <br><label for="confirmPassword"></label>
-        <input placeholder="Confirme a senha" type="password" id="confirmPassword" name="confirmPassword" required><br>
-    <button type="submit" id="btnform">cadastrar-se
+    <form action="cadastro.html" method="post">
+      <span>Nome completo</span>
+      <label for="nome"></label>
+      <input
+        placeholder="Nome Comleto"
+        type="text"
+        id="nome"
+        name="nome"
+        required
+      />
+      <br />
+      <span>E-mail</span>
+      <label for="email"></label>
+      <input
+        placeholder="exemplo@email.com"
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
+      <br />
+      <span>Cpf</span>
+      <label for="cpf"></label>
+      <input
+        placeholder="000.000.000-00 "
+        type="text"
+        id="cpf"
+        nome="cpf"
+        required
+        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+        maxlength="15"
+      />
+      <br />
+      <span>CEP</span>
+      <label for="cep"></label>
+      <input placeholder="CEP" type="number" id="cep" name="cep" required />
+      <br />
+      <span>Número</span>
+      <label for="numero"></label>
+      <input
+        placeholder="Número"
+        type="number"
+        id="numero"
+        name="numero"
+        required
+      />
+      <br />
+      <span>Rua</span>
+      <label for="rua"></label>
+      <input placeholder="Rua Exemplo" type="text" id="rua" name="rua" />
+      <br />
+      <span>Bairro</span>
+      <label for="bairro"></label>
+      <input
+        placeholder="Bairro Exemplo"
+        type="text"
+        id="bairro"
+        name="bairro"
+        required
+      />
+      <br />
+      <span>Telefone</span>
+      <label for="telefone"></label>
+      <input
+        placeholder="(XX) XXXXX-XXXX "
+        type="tel"
+        id="telefone"
+        name="telefone"
+        autocomplete="tel"
+        pattern="´`[0-9]{2}()[0-9]{5}-[0-9]$"
+        required
+      />
+      <br />
+      <br />
+      <p>Qual seu Sexo</p>
+      <br />
+      <input type="radio" id="Masculino" name="sexo" value="masculino" />
+      <label for="Masculino">Masculino</label><br />
+      <input type="radio" id="Feminino" name="sexo" value="Feminino" />
+      <label for="Feminino">Feminino</label><br />
+      <br />
+      <br />
+      <span>Infome uma senha:</span>
+      <label for="password"></label>
+      <input
+        placeholder="Senha"
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br/>
+      <span>Confirme sua senha:</span>
+      <label for="confirmPassword"></label>
+      <input
+        placeholder="Confirme a senha"
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+      /><br />
+      <button type="submit" id="btnform">
         <span>cadastrar-se</span>
-    </button>
-            
-    
+      </button>
+  
     </form>
+
     <div class="div-contato">
-        <button>
-          <a id="suporte" target="_blank" href="suport.html">Suporte</a>
-        </button>
-        <ul class="contato">
-          <li>Entre em contato:</li>
-          <li>
-            <a href=""
-              ><img class="img-contato" src="assets/linkedin (1).png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img class="img-contato" src="assets/github.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img class="img-contato" src="assets/whatsapp.png" alt=""
-            /></a>
-          </li>
-        </ul>
-      </div>
-</body>
+      <button>
+        <a id="suporte" target="_blank" href="suport.html">Suporte</a>
+      </button>
+      <ul class="contato">
+        <li>Entre em contato:</li>
+        <li>
+          <a href=""
+            ><img class="img-contato" src="assets/linkedin (1).png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img class="img-contato" src="assets/github.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img class="img-contato" src="assets/whatsapp.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
