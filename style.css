@@ -196,18 +196,17 @@ main {
   align-content: center;
 }
 
-.form
-{text-align: center;
- width: 790px; border: none;
- height: 550px;
-margin-bottom: 200px;
-align-items: center;
-color: #fff;
-background-color: #055f6e;
-border-radius: 20px;
-font-size: 20px;
-
-
+.form {
+  text-align: center;
+  width: 790px;
+  border: none;
+  height: 550px;
+  margin-bottom: 200px;
+  align-items: center;
+  color: #fff;
+  background-color: #055f6e;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 #btnform {
@@ -229,4 +228,60 @@ font-size: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao redor do botão */
   transform: translateY(-2px); /* Elevação leve do botão */
 }
+/* Estilizando a seção de filmes */
+.filmes, .animes {
+  padding: 20px;
+  background-color: #055f6e;
+  position: relative;
+}
 
+.filmes-populares{
+  text-align: left;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.filmes-lista-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px; /* Espaçamento entre as divs */
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;
+  .filmes-lista-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.filmes-lista-container div {
+  flex: 0 0 auto; /* Cada div ocupa pelo menos 200px e pode crescer */
+  width: 200px; /* Limita a largura máxima de cada div */
+  text-align: center;
+}
+
+.filmes-lista-container img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra às imagens */
+  transition: transform 0.3s; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+.filmes-lista-container img:hover {
+  transform: scale(1.05);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.filmes-lista-container:hover .arrow {
+  display: block; /* Exibe as setas ao passar o mouse sobre a lista de filmes */
+}
