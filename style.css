@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-behavior:auto;
 }
 .img-fundo {
   position: absolute; /* Posiciona a div de forma absoluta */
@@ -229,9 +230,9 @@ main {
   transform: translateY(-2px); /* Elevação leve do botão */
 }
 /* Estilizando a seção de filmes */
-.filmes, .animes {
+.filmes {
   padding: 20px;
-  background-color: #055f6e;
+  
   position: relative;
 }
 
@@ -256,7 +257,7 @@ main {
 
 .filmes-lista-container div {
   flex: 0 0 auto; /* Cada div ocupa pelo menos 200px e pode crescer */
-  width: 200px; /* Limita a largura máxima de cada div */
+  max-width: 200px;/* Limita a largura máxima de cada div */
   text-align: center;
 }
 
