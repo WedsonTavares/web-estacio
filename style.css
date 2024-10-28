@@ -198,18 +198,21 @@ main {
   align-content: center;
 }
 .form {
+  text-decoration: none;
   font-weight: bold;
   color: white;
   max-width: 600px; 
+  max-height: 700px;
   border: none;
   display: flex;
+  justify-content: c;
   flex-direction: column; 
   align-items: left; 
   background-color: #055f6e;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 15px;
   padding: 20px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .form input
@@ -217,23 +220,23 @@ main {
   width: 100%;
   margin-bottom: 5px; 
   padding: 5px; 
-  border: 1px solid #ccc;
   border-radius: 5px; 
   font-size: 16px; 
 }
 
-#btnform {
+.btn-form {
   color: #0c0c0c;
-  background-color: #108296;
+  background-color: #0EA057;
   text-align: center;
   margin-bottom: 20px; 
   padding: 10px 20px; 
   border-radius: 5px; 
   cursor: pointer; 
   transition: all 0.3s ease; 
+  text-decoration: none;
 }
 
-#btnform:hover {
+.btn-form:hover {
   background-color: #0c6d7a; /
 }
 
