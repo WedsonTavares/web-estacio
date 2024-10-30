@@ -262,6 +262,7 @@ input[type="password"] {
   font-size: 34px;
   margin-bottom: 20px;
   color: white;
+  font-family: garamond;
 }
 
 .filmes-lista-container {
@@ -271,6 +272,7 @@ input[type="password"] {
   scroll-behavior: smooth;
   padding-bottom: 20px;
   -ms-overflow-style: none;
+  position:relative;
   .filmes-lista-container::-webkit-scrollbar {
     display: none;
   }
