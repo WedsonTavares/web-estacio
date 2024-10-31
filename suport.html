@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Suporte</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CineQuest</title>
 </head>
 
-<body>
+<body style="min-height: auto;">
     <header>
-        <span class="logotipo"><a class="logotipo" href="index.html">CineQuest</a></span>
+
+        <div class="logotipo">
+            <a href="index.html"><img src="assets/logo2 .png" alt="Logotipo" /></a>
+        </div>
+
         <nav class="nav-equerda">
-            <label for="bucar">Buscar</label>
+            <label for="buscar">Buscar</label>
             <select name="buscar" id="">
-                <option value=""></option>
-                <option value="">Animes</option>
-                <option value="">Filmes</option>
-                <option value="">Series</option>
-                <option value="">Jogos</option>
+                <option value="buscar"></option>
+                <option value="buscar">Animes</option>
+                <option value="buscar">Filmes</option>
+                <option value="buscar">Series</option>
+                <option value="buscar">Jogos</option>
+
             </select>
             <label for="noticias">Notícias</label>
             <select name="noticias" id="noticias">
@@ -30,80 +35,83 @@
         <nav>
             <ul class="nav-links">
                 <li><a target="_blank" href="sobre.html">Sobre</a></li>
-                <li><a target="_blank" href="login.html">Login</a></li>
-                <li><a target="_blank" href="#"><img src="assets/loupe (1).png" alt=""></a></li>
-                <li><a target="_blank" href="assets/cadastro.png">Cadastre-se</a></li>
+                <li>
+                    <a target="_blank" href="login.html">
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#"><img src="assets/loupe (1).png" alt="" /></a>
+                </li>
+                <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="ajuda">
             <h1>Como posso ajudar?</h1>
-            <input type="search" placeholder="Busque por palavra chave" style="color: #055f6eff;">
+            <input type="search" placeholder="Busque por palavra chave"
+                style="color: #055f6eff; width: 90%; height: 25px; border-radius: 8px;">
             <button type="submit"></button>
         </div>
-        <div class="suporte">
-                <div class="cont_sup">
-                    <div class="sup_duvida">
-                        <a class="duvida">
-                            <img src="" alt="">
-                            <h3>Dúvida</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="cont_sup">
-                    <div class="sup_problema">
-                        <a class="problema">
-                            <img src="" alt="">
-                            <h3>Problema</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="cont_sup">
-                    <div class="sup_fale">
-                        <a class="fale">
-                            <img src="" alt="">
-                            <h3>Fale Conosco</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="cont_sup">
-                    <div class="sup_duvida">
-                        <a class="duvida">
-                            <img src="" alt="">
-                            <h3>Dúvida</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="cont_sup">
-                    <div class="sup_problema">
-                        <a class="problema">
-                            <img src="" alt="">
-                            <h3>Problema</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="cont_sup">
-                    <div class="sup_fale">
-                        <a class="fale">
-                            <img src="" alt="">
-                            <h3>Fale Conosco</h3>
-                        </a>
-                    </div>
-                </div>
+        <div class="suporte" style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
+            <div class="sup_duvida" onclick="window.location.href='paginaContrucao.html'" ;>
+                <a class="duvida">
+                    <h3>Dúvida</h3>
+                </a>
+            </div>
+            <div class="sup_problema" onclick="window.location.href='paginaContrucao.html'" ;>
+                <a class="problema">
+                    <h3>Catálogo</h3>
+                </a>
+            </div>
+            <div class="sup_fale" onclick="window.location.href='paginaContrucao.html'" ;>
+                <a class="fale">
+                    <h3>Conta</h3>
+                </a>
+            </div>
+        </div>
+        <div class="suporte" style="border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
+            <div class="sup_duvida" onclick="window.location.href='paginaContrucao.html'" ;>
+                <a class="duvida">
+                    <h3>FAQ</h3>
+                </a>
+            </div>
+            <div class="sup_problema" onclick="window.location.href='paginaContrucao.html'" ;>
+                <a class="problema">
+                    <h3>Sobre Nós</h3>
+                </a>
+            </div>
+            <div class="sup_fale" onclick="window.location.href='paginaContrucao.html'" ;>
+                <a class="fale">
+                    <h3>Contato</h3>
+                </a>
+            </div>
         </div>
     </main>
+
     <div class="div-contato">
-        <a id="suporte" target="_blank" href="suport.html"><button>Suporte</button></a>
+
+        <button class="btn-suporte">
+            <a id="suporte" target="_blank" href="suport.html">Suporte</a>
+        </button>
+
         <ul class="contato">
             <li>Entre em contato:</li>
-            <li><a href=""><img class="img-contato" src="assets/linkedin (1).png" alt=""></a></li>
-            <li><a href=""><img class="img-contato" src="assets/github.png" alt=""></a></li>
-            <li><a href=""><img class="img-contato" src="assets/whatsapp.png" alt=""></a></li>
+            <li>
+                <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="" /></a>
+            </li>
+            <li>
+                <a href=""><img class="img-contato" src="assets/github.png" alt="" /></a>
+            </li>
+            <li>
+                <a href=""><img class="img-contato" src="assets/whatsapp.png" alt="" /></a>
+            </li>
         </ul>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -146,7 +146,7 @@ button:hover {
   max-width: 30px;
 }
 main {
-  background: linear-gradient(to right, #055f6eff, #052131ff);
+  background:#052131ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,44 +154,58 @@ main {
   text-align: center;
   padding: 20px;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
+  min-height: 81vh;
+  background-image: url(assets/telefonistas_sup.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .suporte {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   max-width: 100%;
-  background: linear-gradient(to right, #055f6eff, #052131ff);
+  padding: 40px;
 }
 
 .sup_duvida {
+  display: inline-block;
   background: linear-gradient(to right, #055f6eff, #052131ff);
   padding: 15px;
   height: 120px;
   width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 .sup_duvida:hover {
-  background: #055f6eff;
+  background: #052131ff;
 }
 .sup_problema {
+  display: inline-block;
   background: linear-gradient(to right, #055f6eff, #052131ff);
   padding: 15px;
   height: 120px;
   width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 .sup_problema:hover {
-  background: #055f6eff;
+  background: #052131ff;
 }
 .sup_fale {
+  display: inline-block;
   background: linear-gradient(to right, #055f6eff, #052131ff);
   padding: 15px;
   height: 120px;
   width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 .sup_fale:hover {
-  background: #055f6eff;
+  background: #052131ff;
 }
 
 .cont_sup {
