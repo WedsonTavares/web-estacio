@@ -13,6 +13,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-behavior:auto;
+  color: white;
 }
 .img-fundo {
   position: absolute; /* Posiciona a div de forma absoluta */
@@ -205,43 +207,117 @@ main {
 .sup_fale:hover {
   background: #052131ff;
 }
+
 .cont_sup {
   background-color: darkslategrey;
   align-content: center;
 }
-
-.form
-{text-align: center;
- width: 790px; border: none;
- height: 550px;
-margin-bottom: 200px;
-margin-left: 810px;
-align-items: center;
-color: #fff;
-background-color: #055f6e;
-border-radius: 20px;
-font-size: 20px;
-
-
+.form {
+  background-color: #055f6eff;
+  margin: 100px ;
+  font-size: 18px;
+  display: flex;
+  align-items: left;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#btnform {
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="nome"],
+input[type="cpf"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+.btn-form {
   color: #0c0c0c;
-  background-color: #108296;
+  background-color: #0EA057;
   text-align: center;
-  margin-bottom: 205px;
-  margin-left: 1130px;
-  padding: 10px 20px; /* Adiciona espaçamento interno */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
-  cursor: pointer; /* Muda o cursor para mãozinha */
-  transition: all 0.3s ease; /* Suave transição para o efeito hover */
+  margin-bottom: 20px; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-/* Efeito hover */
-#btnform:hover {
-  background-color: #099e71; /* Cor mais escura no hover */
-  color: #ffffff; /* Muda a cor do texto no hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao redor do botão */
-  transform: translateY(-2px); /* Elevação leve do botão */
+.btn-form:hover {
+  background-color: #0c6d7a; /
 }
 
+/* Estilizando a seção de filmes */
+.filmes {
+  padding: 20px;
+  
+  position: relative;
+}
+
+.filmes-populares{
+  text-align: left;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.filmes-lista-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px; /* Espaçamento entre as divs */
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;
+  .filmes-lista-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.filmes-lista-container div {
+  flex: 0 0 auto; /* Cada div ocupa pelo menos 200px e pode crescer */
+  max-width: 200px;/* Limita a largura máxima de cada div */
+  text-align: center;
+}
+
+.filmes-lista-container img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra às imagens */
+  transition: transform 0.3s; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+.filmes-lista-container img:hover {
+  transform: scale(1.05);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+.filmes-lista-container:hover .arrow {
+  display: block; /* Exibe as setas ao passar o mouse sobre a lista de filmes */
+}
