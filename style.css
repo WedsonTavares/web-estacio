@@ -14,15 +14,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   scroll-behavior:auto;
-<<<<<<< Updated upstream
   color: white;
-=======
-<<<<<<< HEAD
   text-align: center;
-=======
   color: white;
->>>>>>> ebf2d87b88217c9320b43c90b75e0a15f0de123f
->>>>>>> Stashed changes
+
 }
 .img-fundo {
   position: absolute; /* Posiciona a div de forma absoluta */
