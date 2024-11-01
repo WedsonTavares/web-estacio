@@ -9,12 +9,20 @@
 body {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   font-family: "Lato", sans-serif;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   scroll-behavior:auto;
+<<<<<<< Updated upstream
   color: white;
+=======
+<<<<<<< HEAD
+  text-align: center;
+=======
+  color: white;
+>>>>>>> ebf2d87b88217c9320b43c90b75e0a15f0de123f
+>>>>>>> Stashed changes
 }
 .img-fundo {
   position: absolute; /* Posiciona a div de forma absoluta */
@@ -320,4 +328,16 @@ input[type="password"] {
 }
 .filmes-lista-container:hover .arrow {
   display: block; /* Exibe as setas ao passar o mouse sobre a lista de filmes */
+}
+
+.botao-acesso {
+  background-color:darkseagreen;
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    border-radius: 10px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+  margin: auto;
+  width: auto;
+  cursor: pointer; 
+  display: block;
 }
