@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="logotipo">
-        <img src="assets/logo2 .png" alt="" />
+        <a href="index.html"><img src="assets/logo2 .png" alt="" /></a>
       </div>
 
       <nav class="nav-equerda">
@@ -45,107 +45,58 @@
 
     <h1 style="text-align: center;">Cadastre-se</h1>
     <div class="container-form">
-    <form class="form" action="cadastro.html" method="post">
-      <span>Nome completo</span>
-      <label for="nome"></label>
-      <input
-        placeholder="Nome Comleto"
-        type="text"
-        id="nome"
-        name="nome"
-        required
-      />
+      <form id="myForm" class="form">
+        <div id="step1">
+            <h2>Etapa 1: Informações Pessoais</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-      <span>E-mail</span>
-      <label for="email"></label>
-      <input
-        placeholder="exemplo@email.com"
-        type="email"
-        id="email"
-        name="email"
-        required
-      />
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
 
-      <span>Cpf</span>
-      <label for="cpf"></label>
-      <input
-        placeholder="000.000.000-00 "
-        type="text"
-        id="cpf"
-        nome="cpf"
-        required
-        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-        maxlength="15"
-      />
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
 
-      <span>CEP</span>
-      <label for="cep"></label>
-      <input placeholder="CEP" type="number" id="cep" name="cep" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-      <span>Número</span>
-      <label for="numero"></label>
-      <input
-        placeholder="Número"
-        type="number"
-        id="numero"
-        name="numero"
-        required
-      />
+            <button type="button" id="nextBtn" class="btn-form">Próximo</button>
+        </div>
 
-      <span>Rua</span>
-      <label for="rua"></label>
-      <input placeholder="Rua Exemplo" type="text" id="rua" name="rua" />
+        <div id="step2" style="display: none;">
+            <h2>Etapa 2: Endereço</h2>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
 
-      <span>Bairro</span>
-      <label for="bairro"></label>
-      <input
-        placeholder="Bairro Exemplo"
-        type="text"
-        id="bairro"
-        name="bairro"
-        required
-      />
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="Número do endereço" required>
 
-      <span>Telefone</span>
-      <label for="telefone"></label>
-      <input
-        placeholder="(XX) XXXXX-XXXX "
-        type="tel"
-        id="telefone"
-        name="telefone"
-        autocomplete="tel"
-        pattern="´`[0-9]{2}()[0-9]{5}-[0-9]$"
-        required
-      />
+            <label for="logradouro">Rua:</label>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Rua" required>
 
-      <h3>Sexo</h3>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
 
-      <label for="masculino">masculino</label>
-      <input type="radio" id="masculino" name="sexo" value="masculino" />
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
 
-      <label for="feminino">Feminino</label>
-      <input type="radio" id="feminino" name="sexo" value="feminino" />
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" placeholder="Estado" required>
 
-      <span>Infome uma senha:</span>
-      <label for="password"></label>
-      <input
-        placeholder="Senha"
-        type="password"
-        id="password"
-        name="password"
-        required
-      />
-      <span>Confirme sua senha:</span>
-      <label for="confirmPassword"></label>
-      <input
-        placeholder="Confirme a senha"
-        type="password"
-        id="confirmPassword"
-        name="confirmPassword"
-        required
-      />
-      <input class="btn-form" type="button" value="Cadastrar" />
+            <button type="button" id="searchAddress" class="btn-form">Buscar Endereço</button>
+            <div id="addressResult"></div>
+
+            <button type="submit" class="btn-form">Enviar</button>
+        </div>
     </form>
+</main>
+<footer class="div-contato">
+    <ul class="contato">
+        <li>Contato: exemplo@email.com</li>
+    </ul>
+</footer>
+
+
   </div>
 
     <div class="div-contato">
@@ -172,4 +123,5 @@
       </ul>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

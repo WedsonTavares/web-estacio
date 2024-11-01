@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
 }
-/* Resetando os padrões css da página e adicionando fontes */
+
 body {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   font-family: "Lato", sans-serif;
@@ -13,20 +13,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  scroll-behavior:auto;
+  scroll-behavior: auto;
   color: white;
-  text-align: center;
-  color: white;
-
 }
+
 .img-fundo {
-  position: absolute; /* Posiciona a div de forma absoluta */
-  width: 100%; /* Ocupa 100% da largura do body */
-  height: 100%; /* Ocupa 100% da altura do body */
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background: url("assets/original.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+  z-index: -1;
 }
 
 a {
@@ -37,7 +35,6 @@ a {
   padding: 10px;
 }
 
-/* Estilizando o header */
 header {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   display: flex;
@@ -45,33 +42,17 @@ header {
   align-items: center;
   padding: 17px;
   width: 100%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao header */
-}
-
-button {
-  background-color: #022e34; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border: none; /* Remove a borda do botão */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-  transition: background-color 0.2s; /* Transição suave de cor ao passar o mouse */
-  height: 50px;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  position: fixed; /* Posiciona o botão de forma fixa */
-  bottom: 0; /* Define a distância do botão em relação ao fundo da página */
-  left: 20px; /* Define a distância do botão em relação à esquerda da página */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background-color: #08496e; /* Cor de fundo do botão ao passar o mouse */
+  background-color: #08496e;
 }
 
 .logotipo img {
   width: 300px;
 }
+
 .nav-equerda {
   display: flex;
   align-items: center;
@@ -91,9 +72,9 @@ button:hover {
   color: #070505;
   margin-right: 10px;
   font-weight: bold;
-  padding: 5px; /* Adiciona padding ao select */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
-  border: 1px solid #ccc; /* Adiciona borda ao select */
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
   width: 50px;
 }
 
@@ -112,16 +93,15 @@ button:hover {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 5px; /* Adiciona bordas arredondadas */
-  transition: background-color 0.3s, transform 0.3s; /* Adiciona transições suaves */
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .nav-links a:hover {
-  background-color: #39619c; /* Cor de fundo ao passar o mouse */
-  transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+  background-color: #39619c;
+  transform: scale(1.05);
 }
 
-/* Estilizando a div-contato */
 .div-contato {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   display: flex;
@@ -129,12 +109,12 @@ button:hover {
   justify-content: right;
   gap: 20px;
   width: 100%;
-  position: fixed; /* Posiciona a div de forma fixa */
-  bottom: 0; /* Alinha a div ao fundo da página */
-  width: 100%; /* Garante que a div ocupe toda a largura */
-  color: white; /* Cor do texto */
-  padding: 17px; /* Espaçamento interno */
-  box-shadow: 0 -2px 10px rgba(42, 41, 41, 0.5); /* Adiciona sombra para destaque */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 17px;
+  box-shadow: 0 -2px 10px rgba(42, 41, 41, 0.5);
 }
 
 .contato {
@@ -143,13 +123,15 @@ button:hover {
   margin-right: 30px;
   display: flex;
   justify-content: right;
-  gap: 10px; /* Espaçamento entre os itens */
+  gap: 10px;
 }
+
 .img-contato {
   max-width: 30px;
 }
+
 main {
-  background:#052131ff;
+  background: #052131ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,10 +143,11 @@ main {
   text-align: center;
   min-height: 81vh;
   background-image: url(assets/telefonistas_sup.jpg);
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .suporte {
   display: flex;
   flex-wrap: wrap;
@@ -183,9 +166,11 @@ main {
   border-radius: 8px;
   cursor: pointer;
 }
+
 .sup_duvida:hover {
   background: #052131ff;
 }
+
 .sup_problema {
   display: inline-block;
   background: linear-gradient(to right, #055f6eff, #052131ff);
@@ -195,9 +180,11 @@ main {
   border-radius: 8px;
   cursor: pointer;
 }
+
 .sup_problema:hover {
   background: #052131ff;
 }
+
 .sup_fale {
   display: inline-block;
   background: linear-gradient(to right, #055f6eff, #052131ff);
@@ -207,6 +194,7 @@ main {
   border-radius: 8px;
   cursor: pointer;
 }
+
 .sup_fale:hover {
   background: #052131ff;
 }
@@ -215,66 +203,65 @@ main {
   background-color: darkslategrey;
   align-content: center;
 }
+
 .form {
   background-color: #055f6eff;
-  margin: 100px ;
+  margin: 40px auto;
   font-size: 18px;
   display: flex;
-  align-items: left;
-  padding: 10px;
   flex-direction: column;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 65%;
+  max-width: 800px;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="nome"],
 input[type="cpf"],
-input[type="email"],
 input[type="number"],
-input[type="password"] {
+input[type="password"],
+select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-
-
-
 .btn-form {
   color: #0c0c0c;
-  background-color: #0EA057;
+  background-color: #0ea057;
   text-align: center;
-  margin-bottom: 20px; 
-  padding: 10px 20px; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  transition: all 0.3s ease; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
+  border: none;
 }
 
 .btn-form:hover {
-  background-color: #0c6d7a; /
+  background-color: #0c6d7a;
 }
 
-/* Estilizando a seção de filmes */
 .filmes {
   padding: 20px;
-  
   position: relative;
 }
 
-.filmes-populares{
+.filmes-populares {
   text-align: left;
   font-size: 34px;
   margin-bottom: 20px;
@@ -284,32 +271,34 @@ input[type="password"] {
 .filmes-lista-container {
   display: flex;
   overflow-x: auto;
-  gap: 30px; /* Espaçamento entre as divs */
+  gap: 30px;
   scroll-behavior: smooth;
   padding-bottom: 20px;
   -ms-overflow-style: none;
-  .filmes-lista-container::-webkit-scrollbar {
-    display: none;
-  }
+}
+
+.filmes-lista-container::-webkit-scrollbar {
+  display: none;
 }
 
 .filmes-lista-container div {
-  flex: 0 0 auto; /* Cada div ocupa pelo menos 200px e pode crescer */
-  max-width: 200px;/* Limita a largura máxima de cada div */
+  flex: 0 0 auto;
+  max-width: 200px;
   text-align: center;
 }
 
 .filmes-lista-container img {
-  width: 100%; /* Garante que a imagem ocupe toda a largura da div */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra às imagens */
-  transition: transform 0.3s; /* Adiciona uma transição suave ao passar o mouse */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .filmes-lista-container img:hover {
   transform: scale(1.05);
 }
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -321,27 +310,51 @@ input[type="password"] {
   cursor: pointer;
   z-index: 1;
 }
-.filmes-lista-container:hover .arrow {
-  display: block; /* Exibe as setas ao passar o mouse sobre a lista de filmes */
-}
 
-.botao-acesso {
-  background-color:darkseagreen;
-    color: rgb(0, 0, 0); /* Cor do texto */
-    padding: 5px 10px; /* Espaçamento interno do botão */
-    border-radius: 10px; /* Borda arredondada */
-    font-size: 16px; /* Tamanho da fonte */
-  margin: auto;
-  width: auto;
-  cursor: pointer; 
+.filmes-lista-container:hover .arrow {
   display: block;
 }
 
-#img-pag-construcao{
-  min-height: 100vh;
-  width: 100%;
+.botao-acesso {
+  background-color: darkseagreen;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: auto;
+  width: auto;
+  cursor: pointer;
+  display: block;
+}
+
+.radio-group {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  margin-right: 10px;
+  font-weight: normal;
+  color: white;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+  accent-color: #055f6eff; 
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  transition: border-color 0.3s; 
+}
+
+input[type="tel"]:focus {
+  border-color: #0EA057; 
+  outline: none;
 }
