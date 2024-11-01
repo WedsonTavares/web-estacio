@@ -11,7 +11,7 @@
       <div class="logotipo">
         <a href="index.html"><img src="assets/logo2 .png" alt="imagem logotipo" /></a>
       </div>
-
+      
       <nav class="nav-equerda">
         <label for="buscar">Buscar</label>
         <select name="buscar" id="">
@@ -45,47 +45,34 @@
         </ul>
       </nav>
     </header>
-    <h1 style="text-align: center; color: white; font-weight: bold;">Login</h1>
-    <form style="display: flex; justify-content: center; align-items: center;" class="form">
-      <label for="email"> E-mail:</label><br />
-      <input type="email" id="email" placeholder="Digite seu e-mail" />
-
-      <br><br>
-
-      <label for="password">Senha:</label><br />
-      <input type="password" id="password" placeholder="Digite sua senha" />
-
-      <br><br>
-
-
-      <input type="button" value="Acessar sua conta" class="btn-form">
-
-
-    </form>
-    <div class="div-contato">
-        <button class="btn-suporte">
-          <a id="suporte" target="_blank" href="suport.html">Suporte</a>
-        </button>
-        <ul class="contato">
-          <li>Entre em contato:</li>
-          <li>
-            <a href=""
-              ><img class="img-contato" src="assets/linkedin (1).png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img class="img-contato" src="assets/github.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img class="img-contato" src="assets/whatsapp.png" alt=""
-            /></a>
-          </li>
-        </ul>
+    <div class="container-login">
+      <span class="icon-close"><img src="assets/close.png" alt=""></span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="">
+          <div class="input-box">
+            
+            <span class="icon"><img src="assets/email.png" alt=""></span>
+            <input type="email" required />
+            <label for="">E-mail</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><img src="assets/lock.png" alt=""></span>
+            <input type="password" required />
+            <label for="">Senha</label>
+          </div>
+          <div class="lembrar-me">
+            <label for=""><input type="checkbox" name="" id="">Lembrar-me</label>
+            <a href="">Esqueceu sua senha?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="registrar-login">
+            <p>Ainda não tem uma conta?<a href="#" class="registar-login">Cadastre-se.</a></p>
+          </div>
+        </form>
       </div>
-  
+   
+      
       <script src="script.js"></script>
   </body>
 </html>
