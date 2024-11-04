@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+
+/*Estilos globais: Estilos aplicados a todos os elementos e ao body.
+Estilos para o header: Estilos aplicados ao header, que é usado em todos os arquivos HTML.
+Estilos para a div-contato: Estilos aplicados à div-contato, que é usada em todos os arquivos HTML.
+Estilos para a página de suporte: Estilos específicos para a página suport.html.
+Estilos para o formulário de cadastro: Estilos específicos para a página cadastro.html.
+Estilos para a página de login: Estilos específicos para a página login.html.
+Estilos para a página de filmes: Estilos específicos para a página filmes.html.*/
+
+
 * {
   box-sizing: border-box;
   margin: 0;
