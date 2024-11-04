@@ -257,6 +257,8 @@ select {
   background-color: #0c6d7a;
 }
 
+/*começo estilização  da pagina de filmes (Kelvin)*/
+
 .filmes {
   padding: 20px;
   position: relative;
@@ -288,6 +290,7 @@ select {
   text-align: center;
 }
 
+
 .filmes-lista-container img {
   width: 100%;
   height: auto;
@@ -315,6 +318,7 @@ select {
 .filmes-lista-container:hover .arrow {
   display: block;
 }
+/*fim da estilização da pagina de filmes*/
 
 .botao-acesso {
   background-color: darkseagreen;
