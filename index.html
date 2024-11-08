@@ -10,7 +10,6 @@
     <div class="img-fundo"></div>
 
     <header>
-
       <div class="logotipo">
         <a href="index.html"><img src="assets/logo2 .png" alt="Logotipo" /></a>
       </div>
@@ -23,13 +22,6 @@
           <option value="buscar">Filmes</option>
           <option value="buscar">Series</option>
           <option value="buscar">Jogos</option>
-
-        </select>
-        <label for="noticias">Notícias</label>
-        <select name="noticias" id="noticias">
-          <option value="noticias"></option>
-          <option value="noticias">Todas as notícias</option>
-          <option value="noticias">Eventos e experiências</option>
         </select>
       </nav>
 
@@ -52,7 +44,6 @@
     </header>
 
     <div class="div-contato">
-
       <button class="btn-suporte">
         <a id="suporte" target="_blank" href="suport.html">Suporte</a>
       </button>
@@ -78,6 +69,40 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
 
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const url = this.href;
+
+            // Cria o elemento de loading
+            const loading = document.createElement("div");
+            loading.id = "loading";
+            loading.style.position = "fixed";
+            loading.style.top = "0";
+            loading.style.left = "0";
+            loading.style.width = "100%";
+            loading.style.height = "100%";
+            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            loading.style.display = "flex";
+            loading.style.justifyContent = "center";
+            loading.style.alignItems = "center";
+            loading.style.color = "#fff";
+            loading.style.fontSize = "2em";
+            loading.innerText = "Carregando...";
+
+            document.body.appendChild(loading);
+
+            
+            setTimeout(() => {
+              window.location.href = url;
+            }, 400);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
