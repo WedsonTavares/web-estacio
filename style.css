@@ -133,7 +133,7 @@ button:hover {
 .img-contato {
   max-width: 30px;
 }
-
+/*Começo estilização  da pagina de suporte (Felipe)*/
 main {
   background: #052131ff;
   display: flex;
@@ -161,7 +161,7 @@ main {
   padding: 40px;
 }
 
-.sup_duvida {
+.but_sup {
   display: inline-block;
   background: linear-gradient(to right, #055f6eff, #052131ff);
   padding: 15px;
@@ -171,35 +171,7 @@ main {
   cursor: pointer;
 }
 
-.sup_duvida:hover {
-  background: #052131ff;
-}
-
-.sup_problema {
-  display: inline-block;
-  background: linear-gradient(to right, #055f6eff, #052131ff);
-  padding: 15px;
-  height: 120px;
-  width: 150px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.sup_problema:hover {
-  background: #052131ff;
-}
-
-.sup_fale {
-  display: inline-block;
-  background: linear-gradient(to right, #055f6eff, #052131ff);
-  padding: 15px;
-  height: 120px;
-  width: 150px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.sup_fale:hover {
+.but_sup:hover {
   background: #052131ff;
 }
 
@@ -207,7 +179,7 @@ main {
   background-color: darkslategrey;
   align-content: center;
 }
-
+/*Fim estilização  da pagina de suporte (Felipe)*/
 .form {
   background-color: #055f6eff;
   margin: 40px auto;
