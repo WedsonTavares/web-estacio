@@ -60,3 +60,47 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     // Exibe uma mensagem de sucesso
     alert('Formulário enviado com sucesso!');
 });
+
+
+
+//               VALIDAÇÃO DO FORMULÁRIO DE CADASTRO
+
+function validaForm() {
+    const nome = document.getElementById("nome").value;
+    const endereco = document.getElementById(
+        "endereco"
+    ).value;
+    const email = document.getElementById("email").value;
+
+    let erroNome = document.getElementById("erro-nome");
+    let erroEndereco = document.getElementById(
+        "erro-endereco"
+    );
+    let erroEmail = document.getElementById("erro-email");
+
+    erroNome.textContent = "";
+    erroEndereco.textContent = "";
+    erroEmail.textContent = "";
+
+    let estaValido = true;
+
+    if (nome === "" || /\d/.test(nome)) {
+        erroNome.textContent = 
+            "Por favor, entre um nome apropriado.";
+        estaValido = false;
+    }
+
+    if (endereco === "") {
+        erroEndereco.textContent = 
+            "Por favor, entre um endereço válido";
+        estaValido = false;
+    }
+
+    if (email === "" || !email.includes("@")) {
+        erroEmail.textContent = 
+            "Por favor, entre um email válido";
+        estaValido = false;
+    }
+
+    return estaValido;
+}
