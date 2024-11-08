@@ -72,4 +72,6 @@ José Wedson Tavares   - 202403321696
 
 Felipe de Sa Coutinho - 202402347225
 
+Lucas Jatobá Monteiro - 202408274981
+
 
