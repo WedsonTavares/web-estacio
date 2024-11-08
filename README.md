@@ -74,4 +74,6 @@ Felipe de Sa Coutinho - 202402347225
 
 Lucas Jatobá Monteiro - 202408274981
 
+Kelvin Gabriel de S. Gama-202408740662
+
 
