@@ -76,4 +76,6 @@ Lucas Jatobá Monteiro - 202408274981
 
 Kelvin Gabriel de S. Gama-202408740662
 
+Marcos Bezerra Junior - 202404255069
+
 
