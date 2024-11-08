@@ -68,6 +68,7 @@ A intenção do código é criar uma experiência de usuário agradável e intui
 ## Contribuição - Grupo 5 - ARA0062 
 
 José Wedson Tavares   - 202403321696
+
 Felipe de Sa Coutinho - 202402347225
 
 
