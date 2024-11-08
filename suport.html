@@ -9,12 +9,14 @@
 </head>
 
 <body style="min-height: auto;">
+    
     <header>
-
+        <!-- Logotipo -->
         <div class="logotipo">
-            <a href="index.html"><img src="assets/logo2 .png" alt="Logotipo" /></a>
+            <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
         </div>
 
+        <!-- Navegação à esquerda -->
         <nav class="nav-equerda">
             <label for="buscar">Buscar</label>
             <select name="buscar" id="">
@@ -23,15 +25,11 @@
                 <option value="buscar">Filmes</option>
                 <option value="buscar">Series</option>
                 <option value="buscar">Jogos</option>
-
             </select>
-            <label for="noticias">Notícias</label>
-            <select name="noticias" id="noticias">
-                <option value="noticias"></option>
-                <option value="noticias">Todas as notícias</option>
-                <option value="noticias">Eventos e experiências</option>
-            </select>
+            
         </nav>
+
+        <!-- Navegação principal -->
         <nav>
             <ul class="nav-links">
                 <li><a target="_blank" href="sobre.html">Sobre</a></li>
@@ -41,47 +39,51 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="#"><img src="assets/loupe (1).png" alt="" /></a>
+                    <a target="_blank" href="#"><img src="assets/loupe (1).png" alt="Buscar" /></a>
                 </li>
                 <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Seção de ajuda -->
     <main>
         <div class="ajuda">
             <h1>Como posso ajudar?</h1>
             <input type="search" placeholder="Busque por palavra chave"
                 style="color: #055f6eff; width: 90%; height: 25px; border-radius: 8px;">
         </div>
+
+        <!-- Seção de suporte -->
         <div class="suporte" style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'" ;>
+            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
                 <a class="sup">
                     <h3>Dúvida</h3>
                 </a>
             </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'" ;>
+            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
                 <a class="sup">
                     <h3>Catálogo</h3>
                 </a>
             </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'" ;>
+            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
                 <a class="sup">
                     <h3>Conta</h3>
                 </a>
             </div>
         </div>
         <div class="suporte" style="border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'" ;>
+            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
                 <a class="sup">
                     <h3>FAQ</h3>
                 </a>
             </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'" ;>
+            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
                 <a class="sup">
                     <h3>Sobre Nós</h3>
                 </a>
             </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'" ;>
+            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
                 <a class="sup">
                     <h3>Contato</h3>
                 </a>
@@ -89,32 +91,35 @@
         </div>
     </main>
 
+    <!-- Contato e suporte -->
     <div class="div-contato">
         <ul class="contato">
             <li>Entre em contato:</li>
             <li>
-                <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="" /></a>
+                <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn" /></a>
             </li>
             <li>
-                <a href=""><img class="img-contato" src="assets/github.png" alt="" /></a>
+                <a href=""><img class="img-contato" src="assets/github.png" alt="GitHub" /></a>
             </li>
             <li>
-                <a href=""><img class="img-contato" src="assets/whatsapp.png" alt="" /></a>
+                <a href=""><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp" /></a>
             </li>
         </ul>
     </div>
 
+    
     <script src="script.js"></script>
+    <!-- Script para animação de carregamento -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
           const links = document.querySelectorAll("a");
-  
+
           links.forEach((link) => {
             link.addEventListener("click", function (event) {
               event.preventDefault();
               const url = this.href;
-  
-              // Cria o elemento de loading
+
+              // Cria a div de carregamento 
               const loading = document.createElement("div");
               loading.id = "loading";
               loading.style.position = "fixed";
@@ -129,17 +134,17 @@
               loading.style.color = "#fff";
               loading.style.fontSize = "2em";
               loading.innerText = "Carregando...";
-  
+
               document.body.appendChild(loading);
-  
-              // Aguarda 2 segundos antes de redirecionar
+
+               // Aguarda 0.4 segundos antes de redirecionar
               setTimeout(() => {
                 window.location.href = url;
               }, 400);
             });
           });
         });
-      </script>
+    </script>
 </body>
 
 </html>

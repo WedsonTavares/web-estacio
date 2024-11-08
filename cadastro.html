@@ -9,33 +9,33 @@
 
   <body>
     <header>
+      <!-- Logotipo -->
       <div class="logotipo">
-        <a href="index.html"><img src="assets/logo2 .png" alt="" /></a>
+        <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
       </div>
 
+      <!-- Navegação Buscar -->
       <nav class="nav-equerda">
         <label for="buscar">Buscar</label>
         <select name="buscar" id="">
           <option value="buscar"></option>
-          <option value="buscar">Animes</option>
-          <option value="buscar">Filmes</option>
-          <option value="buscar">Series</option>
-          <option value="buscar">Jogos</option>
-        </select>
-        <label for="noticias">Notícias</label>
-        <select name="noticias" id="noticias">
-          <option value="noticias"></option>
-          <option value="noticias">Todas as notícias</option>
-          <option value="noticias">Eventos e experiências</option>
+          <option value="buscar"><a href="PaginaFilme.html">Animes</a></option>
+          <option value="buscar"><a href="PaginaFilme.html">Filmes</a></option>
+          <option value="buscar"><a href="PaginaFilme.html">Séries</a></option>
+          <option value="buscar">
+            <a href="PaginaFilme.html">Notícias</a>
+          </option>
         </select>
       </nav>
+
+      <!-- Navegação principal -->
       <nav>
         <ul class="nav-links">
           <li><a target="_blank" href="sobre.html">Sobre</a></li>
           <li><a target="_blank" href="login.html">Login</a></li>
           <li>
             <a target="_blank" href="#"
-              ><img src="assets/loupe (1).png" alt=""
+              ><img src="assets/loupe (1).png" alt="Buscar"
             /></a>
           </li>
           <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
@@ -43,62 +43,98 @@
       </nav>
     </header>
 
-    <h1 style="text-align: center;">Cadastre-se</h1>
+    <!-- Título da página -->
+    <h1 style="text-align: center">Cadastre-se</h1>
+
+    <!-- Formulário de cadastro -->
     <div class="container-form">
       <form id="myForm" class="form">
+        <!-- Etapa 1: Informações Pessoais -->
         <div id="step1">
-            <h2>Etapa 1: Informações Pessoais</h2>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+          <h2>Etapa 1: Informações Pessoais</h2>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
 
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" required>
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required />
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-            <button type="button" id="nextBtn" class="btn-form">Próximo</button>
+          <button type="button" id="nextBtn" class="btn-form">Próximo</button>
         </div>
 
-        <div id="step2" style="display: none;">
-            <h2>Etapa 2: Endereço</h2>
-            <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+        <!-- Etapa 2: Endereço -->
+        <div id="step2" style="display: none">
+          <h2>Etapa 2: Endereço</h2>
+          <label for="cep">CEP:</label>
+          <input
+            type="text"
+            id="cep"
+            name="cep"
+            placeholder="Digite seu CEP"
+            required
+          />
 
-            <label for="numero">Número:</label>
-            <input type="text" id="numero" name="numero" placeholder="Número do endereço" required>
+          <label for="numero">Número:</label>
+          <input
+            type="text"
+            id="numero"
+            name="numero"
+            placeholder="Número do endereço"
+            required
+          />
 
-            <label for="logradouro">Rua:</label>
-            <input type="text" id="logradouro" name="logradouro" placeholder="Rua" required>
+          <label for="logradouro">Rua:</label>
+          <input
+            type="text"
+            id="logradouro"
+            name="logradouro"
+            placeholder="Rua"
+            required
+          />
 
-            <label for="bairro">Bairro:</label>
-            <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+          <label for="bairro">Bairro:</label>
+          <input
+            type="text"
+            id="bairro"
+            name="bairro"
+            placeholder="Bairro"
+            required
+          />
 
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+          <label for="cidade">Cidade:</label>
+          <input
+            type="text"
+            id="cidade"
+            name="cidade"
+            placeholder="Cidade"
+            required
+          />
 
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" name="estado" placeholder="Estado" required>
+          <label for="estado">Estado:</label>
+          <input
+            type="text"
+            id="estado"
+            name="estado"
+            placeholder="Estado"
+            required
+          />
 
-            <button type="button" id="searchAddress" class="btn-form">Buscar Endereço</button>
-            <div id="addressResult"></div>
+          <button type="button" id="searchAddress" class="btn-form">
+            Buscar Endereço
+          </button>
+          <div id="addressResult"></div>
 
-            <button type="submit" class="btn-form">Enviar</button>
+          <button type="submit" class="btn-form">Enviar</button>
         </div>
-    </form>
-</main>
-<footer class="div-contato">
-    <ul class="contato">
-        <li>Contato: exemplo@email.com</li>
-    </ul>
-</footer>
+      </form>
+    </div>
 
-
-  </div>
-
+    <!-- Barra de suporte ao final da página -->
     <div class="div-contato">
       <button>
         <a id="suporte" target="_blank" href="suport.html">Suporte</a>
@@ -107,56 +143,61 @@
         <li>Entre em contato:</li>
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/linkedin (1).png" alt=""
+            ><img
+              class="img-contato"
+              src="assets/linkedin (1).png"
+              alt="LinkedIn"
           /></a>
         </li>
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/github.png" alt=""
+            ><img class="img-contato" src="assets/github.png" alt="GitHub"
           /></a>
         </li>
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/whatsapp.png" alt=""
+            ><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp"
           /></a>
         </li>
       </ul>
     </div>
-  </body>
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const links = document.querySelectorAll("a");
 
-      links.forEach((link) => {
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-          const url = this.href;
+    <script src="script.js"></script>
+    <!-- Script para animação de carregamento -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
 
-          // Cria o elemento de loading
-          const loading = document.createElement("div");
-          loading.id = "loading";
-          loading.style.position = "fixed";
-          loading.style.top = "0";
-          loading.style.left = "0";
-          loading.style.width = "100%";
-          loading.style.height = "100%";
-          loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-          loading.style.display = "flex";
-          loading.style.justifyContent = "center";
-          loading.style.alignItems = "center";
-          loading.style.color = "#fff";
-          loading.style.fontSize = "2em";
-          loading.innerText = "Carregando...";
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const url = this.href;
 
-          document.body.appendChild(loading);
+            // Cria uma div de carregamento
+            const loading = document.createElement("div");
+            loading.id = "loading";
+            loading.style.position = "fixed";
+            loading.style.top = "0";
+            loading.style.left = "0";
+            loading.style.width = "100%";
+            loading.style.height = "100%";
+            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            loading.style.display = "flex";
+            loading.style.justifyContent = "center";
+            loading.style.alignItems = "center";
+            loading.style.color = "#fff";
+            loading.style.fontSize = "2em";
+            loading.innerText = "Carregando...";
 
-          
-          setTimeout(() => {
-            window.location.href = url;
-          }, 400);
+            document.body.appendChild(loading);
+
+            // Navega para a nova página apos 0.4 segundos
+            setTimeout(() => {
+              window.location.href = url;
+            }, 400);
+          });
         });
       });
-    });
-  </script>
+    </script>
+  </body>
 </html>

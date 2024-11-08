@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-
-
-
+/* Estilos globais */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +8,7 @@
   font-family: "Lato", sans-serif;
 }
 
+/* Estilos para o body - Usado em todos os arquivos HTML */
 body {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   font-family: "Lato", sans-serif;
@@ -21,6 +20,7 @@ body {
   color: white;
 }
 
+/* Estilos para a imagem de fundo - Usado em index.html */
 .img-fundo {
   position: absolute;
   width: 100%;
@@ -31,6 +31,7 @@ body {
   z-index: -1;
 }
 
+/* Estilos para os links - Usado em todos os arquivos HTML */
 a {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -39,6 +40,7 @@ a {
   padding: 10px;
 }
 
+/* Estilos para o header - Usado em todos os arquivos HTML */
 header {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   display: flex;
@@ -57,6 +59,9 @@ button:hover {
   width: 300px;
 }
 
+
+
+/* Estilos para a nav desquerda "Buscar" */
 .nav-equerda {
   display: flex;
   align-items: center;
@@ -81,7 +86,7 @@ button:hover {
   border: 1px solid #ccc;
   width: 50px;
 }
-
+/* Estilos para a nav direita "Sobre - Login - lupa- cadastre-se" */
 .nav-links {
   display: flex;
   list-style: none;
@@ -106,6 +111,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Estilos para a div-contato - Usado em todos os arquivos HTML */
 .div-contato {
   background: linear-gradient(to right, #055f6eff, #052131ff);
   display: flex;
@@ -133,7 +139,8 @@ button:hover {
 .img-contato {
   max-width: 30px;
 }
-/*Começo estilização  da pagina de suporte (Felipe)*/
+
+/* Estilos para a página de suporte - suport.html */
 main {
   background: #052131ff;
   display: flex;
@@ -179,7 +186,8 @@ main {
   background-color: darkslategrey;
   align-content: center;
 }
-/*Fim estilização  da pagina de suporte (Felipe)*/
+
+/* Estilos para o formulário de cadastro - cadastro.html */
 .form {
   background-color: #055f6eff;
   margin: 40px auto;
@@ -232,8 +240,7 @@ select {
   background-color: #0c6d7a;
 }
 
-/*começo estilização  da pagina de filmes (Kelvin)*/
-
+/* Estilos para a página de filmes - PaginaFilme.html */
 .filmes {
   padding: 20px;
   position: relative;
@@ -265,7 +272,6 @@ select {
   text-align: center;
 }
 
-
 .filmes-lista-container img {
   width: 100%;
   height: auto;
@@ -293,8 +299,8 @@ select {
 .filmes-lista-container:hover .arrow {
   display: block;
 }
-/*fim da estilização da pagina de filmes*/
 
+/* Estilos para o botão de acesso - Usado em todos os arquivos HTML */
 .botao-acesso {
   background-color: darkseagreen;
   color: rgb(0, 0, 0);
@@ -307,6 +313,7 @@ select {
   display: block;
 }
 
+/* Estilos para o grupo de rádio - Usado em cadastro.html */
 .radio-group {
   display: flex;
   align-items: center;
@@ -321,44 +328,44 @@ select {
 
 .radio-group input[type="radio"] {
   margin-right: 5px;
-  accent-color: #055f6eff; 
+  accent-color: #055f6eff;
 }
 
+/* Estilos para o input de telefone - Usado em cadastro.html */
 input[type="tel"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  font-size: 16px; 
-  transition: border-color 0.3s; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
 }
 
 input[type="tel"]:focus {
-  border-color: #0EA057; 
+  border-color: #0EA057;
   outline: none;
 }
 
-/*ESTILOS DA PAGINA LOGIN e CADASTRO*/
-.container-login{
+/* Estilos para a página de login - login.html */
+.container-login {
   position: relative;
   width: 440px;
   height: 440px;
   background: transparent;
   margin-left: 530px;
-  /*border: 2px solid rgba(255, 255, 255, 0.5);*/
   border-radius: 20px;
   backdrop-filter: blur(15px);
-  box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
-  
- /*overflow: hidden;*/
 }
-.form-box login{
-display: none;
+
+.form-box login {
+  display: none;
 }
-.container-login .icon-close{
+
+.container-login .icon-close {
   position: absolute;
   top: 0px;
   right: 0;
@@ -374,24 +381,27 @@ display: none;
   border-bottom-left-radius: 20px;
   z-index: 1;
 }
-  
-.container-login .form-box{
+
+.container-login .form-box {
   width: 100%;
   padding: 40px;
 }
-.form-box h2{
+
+.form-box h2 {
   font-size: 2em;
   color: #51f2cc;
   text-align: center;
 }
-.input-box{
+
+.input-box {
   position: relative;
   width: 100%;
   height: 50px;
   border-bottom: 2px solid #162938;
   margin: 30px 0;
 }
-.input-box label{
+
+.input-box label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -402,13 +412,13 @@ display: none;
   pointer-events: none;
   transition: 0.5s;
 }
-.input-box input:focus ~ label,	
-.input-box input:valid ~ label{
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
   top: -9px;
- 
-  
 }
-.input-box input{
+
+.input-box input {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -416,37 +426,42 @@ display: none;
   outline: none;
   color: white;
   font-weight: 600;
-  padding:  35px 0 5px;
-  
+  padding: 35px 0 5px;
 }
-.input-box .icon{
+
+.input-box .icon {
   position: absolute;
   right: 8px;
   font-size: 1.2em;
   color: #ffffff;
   line-height: 57px;
 }
-.lembrar-me{
-  font-size: .9em;
+
+.lembrar-me {
+  font-size: 0.9em;
   color: white;
   font-weight: 500;
   margin: -15px 0 15px;
   display: flex;
   justify-content: space-between;
 }
-.lembrar-me label input{
+
+.lembrar-me label input {
   accent-color: #162938;
   margin-right: 3px;
 }
-.lembrar-me a{
+
+.lembrar-me a {
   color: white;
   text-decoration: none;
   font-size: 0.9em;
 }
-.lembrar-me a:hover{
+
+.lembrar-me a:hover {
   text-decoration: underline;
 }
-.btn{
+
+.btn {
   width: 100%;
   height: 45px;
   background: #162938;
@@ -458,7 +473,8 @@ display: none;
   color: white;
   font-weight: 500;
 }
-.registrar-login{
+
+.registrar-login {
   font-size: 0.9em;
   color: white;
   text-align: center;
@@ -466,11 +482,12 @@ display: none;
   margin: 25px 0 10px;
 }
 
-.registrar-login p a{
+.registrar-login p a {
   color: #51f2cc;
   text-decoration: none;
   font-weight: 600;
 }
-.registrar-login p a:hover{
+
+.registrar-login p a:hover {
   text-decoration: underline;
 }

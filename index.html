@@ -7,13 +7,17 @@
     <title>CineQuest</title>
   </head>
   <body>
+    <!-- Imagem de fundo -->
     <div class="img-fundo"></div>
 
+    <!-- Cabeçalho -->
     <header>
+      <!-- Logotipo principal-->
       <div class="logotipo">
-        <a href="index.html"><img src="assets/logo2 .png" alt="Logotipo" /></a>
+        <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
       </div>
 
+      <!-- Navegação Buscar -->
       <nav class="nav-equerda">
         <label for="buscar">Buscar</label>
         <select name="buscar" id="">
@@ -25,6 +29,7 @@
         </select>
       </nav>
 
+      <!-- Navegação principal -->
       <nav>
         <ul class="nav-links">
           <li><a target="_blank" href="sobre.html">Sobre</a></li>
@@ -35,7 +40,7 @@
           </li>
           <li>
             <a target="_blank" href="#"
-              ><img src="assets/loupe (1).png" alt=""
+              ><img src="assets/loupe (1).png" alt="Buscar"
             /></a>
           </li>
           <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
@@ -43,6 +48,7 @@
       </nav>
     </header>
 
+    <!-- Barra de suporte ao final da página -->
     <div class="div-contato">
       <button class="btn-suporte">
         <a id="suporte" target="_blank" href="suport.html">Suporte</a>
@@ -52,23 +58,24 @@
         <li>Entre em contato:</li>
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/linkedin (1).png" alt=""
+            ><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn"
           /></a>
         </li>
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/github.png" alt=""
+            ><img class="img-contato" src="assets/github.png" alt="GitHub"
           /></a>
         </li>
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/whatsapp.png" alt=""
+            ><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp"
           /></a>
         </li>
       </ul>
     </div>
-
     <script src="script.js"></script>
+
+    <!-- Script para animação de carregamento -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll("a");
@@ -78,7 +85,7 @@
             event.preventDefault();
             const url = this.href;
 
-            // Cria o elemento de loading
+            // Cria uma div de carregamento
             const loading = document.createElement("div");
             loading.id = "loading";
             loading.style.position = "fixed";
@@ -86,7 +93,7 @@
             loading.style.left = "0";
             loading.style.width = "100%";
             loading.style.height = "100%";
-            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            loading.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
             loading.style.display = "flex";
             loading.style.justifyContent = "center";
             loading.style.alignItems = "center";
@@ -96,7 +103,7 @@
 
             document.body.appendChild(loading);
 
-            
+            // Navega para a nova página apos 0.4 segundos
             setTimeout(() => {
               window.location.href = url;
             }, 400);
