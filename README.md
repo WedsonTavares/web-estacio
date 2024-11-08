@@ -51,7 +51,7 @@ O arquivo `style.css` define a aparência e o layout do site. Inclui:
 O arquivo `script.js` adiciona funcionalidades interativas ao site, como:
 
 - **Animações de carregamento**: Adiciona uma animação de carregamento ao clicar em links, melhorando a experiência do usuário ao navegar entre páginas.
-- **Validações do Formulário de Cadastro e Login**
+- **Validações do Formulário de Cadastro e Login.**
 - **Event listeners**: Adiciona event listeners para interceptar cliques em links, prevenir a navegação imediata, exibir a animação de carregamento e redirecionar para a nova página após um pequeno atraso.
 
 ## Intenção do Código
