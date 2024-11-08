@@ -41,10 +41,10 @@ Cada página HTML segue uma estrutura semelhante, incluindo:
 
 O arquivo `style.css` define a aparência e o layout do site. Inclui:
 
-- **Estilos globais**: Aplicados a todos os elementos, como `box-sizing`, `margin`, `padding` e `font-family`.
-- **Estilos para o body**: Define o fundo, a fonte, a altura mínima, o layout flexível e o comportamento de rolagem.
-- **Estilos específicos para cada página**: Incluem estilos para a imagem de fundo, links, cabeçalho, navegação, formulários, listas de filmes/animes, e seções de suporte.
-- **Animações de carregamento**: Definem a aparência e o comportamento das animações de carregamento exibidas ao clicar em links.
+- **Estilos globais**: 
+- **Estilos para o body**: 
+- **Estilos específicos para cada página**: 
+- **Animações de carregamento**: 
 
 ### Funcionalidades JavaScript
 
