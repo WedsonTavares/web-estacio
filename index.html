@@ -75,46 +75,41 @@
     </div>
     <script src="script.js"></script>
 
-    <!-- Script para animação de carregamento -->
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("a");
+  <!-- Script para animação de carregamento -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
 
-    links.forEach((link) => {
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        const url = this.href;
+        links.forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const url = this.href;
 
-        // Cria uma div de carregamento
-        const loading = document.createElement("div");
-        loading.id = "loading";
-        loading.style.position = "fixed";
-        loading.style.top = "0";
-        loading.style.left = "0";
-        loading.style.width = "100%";
-        loading.style.height = "100%";
-        loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-        loading.style.display = "flex";
-        loading.style.justifyContent = "center";
-        loading.style.alignItems = "center";
+                // Cria o elemento de loading
+                const loading = document.createElement("div");
+                loading.id = "loading";
+                loading.style.position = "fixed";
+                loading.style.top = "0";
+                loading.style.left = "0";
+                loading.style.width = "100%";
+                loading.style.height = "100%";
+                loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+                loading.style.display = "flex";
+                loading.style.justifyContent = "center";
+                loading.style.alignItems = "center";
+                loading.style.color = "#fff";
+                loading.style.fontSize = "2em";
+                loading.innerText = "Carregando...";
 
-        // Cria o elemento de imagem para o GIF de carregamento
-        const loadingGif = document.createElement("img");
-        loadingGif.src = "assets/loading.gif"; // Substitua pelo caminho do seu GIF
-        loadingGif.alt = "Carregando...";
+                document.body.appendChild(loading);
 
-        // Adiciona o GIF de carregamento à div de carregamento
-        loading.appendChild(loadingGif);
-
-        document.body.appendChild(loading);
-
-        // Navega para a nova página após 0.4 segundos
-        setTimeout(() => {
-          window.location.href = url;
-        }, 400);
-      });
+                // Aguarda 0.4 segundos antes de redirecionar
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 400);
+            });
+        });
     });
-  });
 </script>
   </body>
 </html>
