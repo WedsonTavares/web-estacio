@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Login</title>
   </head>
   <body>
@@ -45,38 +46,29 @@
     </header>
 
     <!-- Formulário de login -->
-    <div class="container-login">
-      <span class="icon-close"></span>
-      <div class="form-box login">
-        <h2>Login</h2>
-        <form action="">
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="email" required />
-            <label for="">E-mail</label>
+    <div class="wrapper1">
+      <form action="">
+          <h1>Login</h1>
+          <div class="input-box1">
+              <input type="text" placeholder="Usuário" required>
+              <i class='bx bxs-user'></i>
           </div>
-          <div class="input-box">
-            <span class="icon"></span>
-            <input type="password" required />
-            <label for="">Senha</label>
+          <div class="input-box1">
+              <input type="password" placeholder="Senha" required>
+              <i class='bx bxs-lock-alt'></i>
           </div>
-          <div class="lembrar-me">
-            <label for=""
-              ><input type="checkbox" name="" id="" />Lembrar-me</label
-            >
-            <a href="">Esqueceu sua senha?</a>
+
+          <div class="remember-forgot1">
+              <label><input type="checkbox"> Lembra-me. </label>
+              <a href="#">Esqueceu a senha?</a>
           </div>
-          <button type="submit" class="btn">Login</button>
-          <div class="registrar-login">
-            <p>
-              Ainda não tem uma conta?<a href="#" class="registrar-login"
-                >Cadastre-se.</a
-              >
-            </p>
+          <button type="submit" class="btn1">Login</button>
+
+          <div class="register-link1">
+              <p>Nao tem conta? <a href="#">Cadastra-se.</a></p>
           </div>
-        </form>
-      </div>
-    </div>
+      </form>
+  </div>
 
     <!-- Barra de suporte ao final da página -->
     <div class="div-contato">

@@ -369,7 +369,7 @@ input[type="tel"]:focus {
   outline: none;
 }
 
-/* Estilos para a página de login - login.html */
+/* Estilos para a página de login - login.html 
 .container-login {
   position: relative;
   width: 440px;
@@ -494,7 +494,7 @@ input[type="tel"]:focus {
   font-size: 1em;
   color: white;
   font-weight: 500;
-}
+} 
 
 .registrar-login {
   font-size: 0.9em;
@@ -512,4 +512,113 @@ input[type="tel"]:focus {
 
 .registrar-login p a:hover {
   text-decoration: underline;
+} */
+
+/* teste login */
+.wrapper1 {
+  width: 420px;
+  background: transparent;
+  padding: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color:#fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper1 h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper1 .input-box1{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box1 input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px; 
+  font-size: 16px;
+  color:#fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box1 input::placeholder {
+  color: #fff;
+}
+
+.input-box1 i {
+  position: absolute;
+  right: 20px;
+  top: 5%;
+  transform: translateY(50%);
+  font-size: 20px;
+}
+
+.wrapper1 .remember-forgot1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17.5px;
+  margin: -15px 0 15px;    
+}
+
+.remember-forgot1 label input {
+  accent-color: #fff;
+  margin-right: 3px;
+  color: #fff;
+}
+
+.remember-forgot1 label {
+  color: #fff;
+}
+
+.remember-forgot1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot1 a:hover {
+  text-decoration: underline;
+}
+
+.wrapper1 .btn1 {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1 );
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper1 .register-link1 {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link1 p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link1 p a:hover{
+  text-decoration: underline;    
 }
