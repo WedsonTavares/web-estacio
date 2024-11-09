@@ -25,12 +25,24 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("assets/original.jpeg");
+  background: url("./assets/loop3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+  animation: loop_fundo 12s linear infinite;
 }
 
+@keyframes loop_fundo {
+  0% {
+    background-image: url('./assets/loop1.jpg')
+  }
+  50% {
+    background-image: url('./assets/loop2.jpg')
+  }
+  100% {
+    background-image: url('./assets/loop3.jpg')
+  }
+}
 /* Estilos para os links - Usado em todos os arquivos HTML */
 a {
   font-family: "Poppins", sans-serif;
@@ -166,6 +178,7 @@ main {
   gap: 40px;
   max-width: 100%;
   padding: 40px;
+  margin-bottom: 20px;
 }
 
 .but_sup {
@@ -300,6 +313,15 @@ select {
   display: block;
 }
 
+.parallax {
+  background-image: url("./assets/Pag_filmes.jpg");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+}
 /* Estilos para o botão de acesso - Usado em todos os arquivos HTML */
 .botao-acesso {
   background-color: darkseagreen;
