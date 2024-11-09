@@ -212,22 +212,28 @@ main {
 /* Estilos para o formulário de cadastro - cadastro.html */
 .form {
   background-color: #055f6eff;
-  margin: 40px auto;
-  font-size: 18px;
+  margin: 0 auto;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 65%;
-  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: 55%;
+  
+  
 }
-
+.step1, .step2 h2 {
+  text-align: center;
+  font-size: 22px;
+  bottom: 10px;
+}
 label {
+
   display: block;
   margin-bottom: 8px;
   font-weight: bolder;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 input[type="text"],
