@@ -56,7 +56,7 @@ document.getElementById('searchAddress').addEventListener('click', function() {
 // Adiciona um event listener ao formulário para lidar com o envio
 document.getElementById('myForm').addEventListener('submit', function(event) {
     // Previne o comportamento padrão de envio do formulário
-    event.preventDefault();
+    //event.preventDefault();
     // Exibe uma mensagem de sucesso
     alert('Formulário enviado com sucesso!');
 });
