@@ -91,10 +91,11 @@ button:hover {
 }
 
 .nav-equerda label {
+  background: tra;
   color: #fff;
   margin-right: 10px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 30px;
 }
 
@@ -105,7 +106,8 @@ button:hover {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  width: 50px;
+  width: 120px;
+  font-size: 16px;
 }
 /* Estilos para a nav direita "Sobre - Login - lupa- cadastre-se" */
 .nav-links {

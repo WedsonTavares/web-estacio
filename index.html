@@ -20,12 +20,12 @@
       <!-- Navegação Buscar -->
       <nav class="nav-equerda">
         <label for="buscar">Buscar</label>
-        <select name="buscar" id="">
-          <option value="buscar"></option>
-          <option value="buscar">Animes</option>
-          <option value="buscar">Filmes</option>
-          <option value="buscar">Series</option>
-          <option value="buscar">Jogos</option>
+        <select name="buscar" id="buscar">
+          <option value="">Selecione</option>
+          <option value="PaginaFilme.html?categoria=animes">Animes</option>
+          <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
+          <option value="PaginaFilme.html?categoria=series">Series</option>
+          <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
         </select>
       </nav>
 
@@ -55,10 +55,12 @@
       </button>
 
       <ul class="contato">
-        
         <li>
           <a href=""
-            ><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn"
+            ><img
+              class="img-contato"
+              src="assets/linkedin (1).png"
+              alt="LinkedIn"
           /></a>
         </li>
         <li>
@@ -74,42 +76,57 @@
       </ul>
     </div>
     <script src="script.js"></script>
-
-  <!-- Script para animação de carregamento -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <!-- Script para animação de carregamento -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll("a");
 
         links.forEach((link) => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-                const url = this.href;
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const url = this.href;
 
-                // Cria o elemento de loading
-                const loading = document.createElement("div");
-                loading.id = "loading";
-                loading.style.position = "fixed";
-                loading.style.top = "0";
-                loading.style.left = "0";
-                loading.style.width = "100%";
-                loading.style.height = "100%";
-                loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-                loading.style.display = "flex";
-                loading.style.justifyContent = "center";
-                loading.style.alignItems = "center";
-                loading.style.color = "#fff";
-                loading.style.fontSize = "2em";
-                loading.innerText = "Carregando...";
+            // Cria o elemento de loading
+            const loading = document.createElement("div");
+            loading.id = "loading";
+            loading.style.position = "fixed";
+            loading.style.top = "0";
+            loading.style.left = "0";
+            loading.style.width = "100%";
+            loading.style.height = "100%";
+            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            loading.style.display = "flex";
+            loading.style.justifyContent = "center";
+            loading.style.alignItems = "center";
+            loading.style.color = "#fff";
+            loading.style.fontSize = "2em";
+            loading.innerText = "Carregando...";
 
-                document.body.appendChild(loading);
+            document.body.appendChild(loading);
 
-                // Aguarda 0.4 segundos antes de redirecionar
-                setTimeout(() => {
-                    window.location.href = url;
-                }, 400);
-            });
+            // Aguarda 0.4 segundos antes de redirecionar
+            setTimeout(() => {
+              window.location.href = url;
+            }, 400);
+          });
         });
-    });
-</script>
+      });
+    </script>
+     <!-- Script validar os links da Barra Buscar-->
+    <script> document.addEventListener("DOMContentLoaded", function () {
+      const selectBuscar = document.getElementById("buscar");
+    
+      if (selectBuscar) {
+        selectBuscar.addEventListener("change", function () {
+          const selectedValue = this.value;
+    
+          // Verifica se uma opção válida foi selecionada
+          if (selectedValue) {
+            // Redireciona para a URL correspondente
+            window.location.href = selectedValue;
+          }
+        });
+      }
+    });</script>
   </body>
 </html>
