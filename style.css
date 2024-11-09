@@ -29,7 +29,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  animation: loop_fundo 12s linear infinite;
+  animation: loop_fundo 9s linear infinite;
 }
 
 @keyframes loop_fundo {
