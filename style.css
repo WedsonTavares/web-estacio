@@ -498,3 +498,42 @@ input[type="tel"]:focus {
 .register-link1 p a:hover {
   text-decoration: underline;
 }
+
+
+
+/*              REPONSIVIDADE*/
+@media (max-width: 450px) {
+  .logotipo img {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .nav-equerda {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-equerda label,
+  .nav-equerda select {
+    font-size: 12px;
+    margin-left: 0 auto;
+  }
+
+  .nav-links {
+    width: 100px;
+    justify-content: center;
+    flex-direction: column;
+   
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  .nav-links li {
+    margin-left: 3px;
+  }
+
+ 
+}
