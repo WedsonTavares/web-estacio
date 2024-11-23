@@ -69,7 +69,7 @@
         <button type="submit" class="btn1">Login</button>
 
         <div class="register-link1">
-          <p>Nao tem conta? <a href="#">Cadastre-se.</a></p>
+          <p>Nao tem conta? <a href="cadastro.html">Cadastre-se.</a></p>
         </div>
       </form>
     </div>
@@ -103,6 +103,22 @@
       </ul>
     </div>
     <script src="script.js"></script>
+         <!-- Script validar os links da Barra Buscar-->
+         <script> document.addEventListener("DOMContentLoaded", function () {
+          const selectBuscar = document.getElementById("buscar");
+        
+          if (selectBuscar) {
+            selectBuscar.addEventListener("change", function () {
+              const selectedValue = this.value;
+        
+              // Verifica se uma opção válida foi selecionada
+              if (selectedValue) {
+                // Redireciona para a URL correspondente
+                window.location.href = selectedValue;
+              }
+            });
+          }
+        });</script>
     <!-- Script para animação de carregamento -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {

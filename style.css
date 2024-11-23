@@ -64,6 +64,45 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #13dc78;
+  }
+  50% {
+    color: #0ea057;
+  }
+
+  75% {
+    color: #13dc78;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.index-title h1 a {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  animation: colorChange 7s infinite; 
+}
+
+
+/* .index-title h1 a{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+}
+.index-title h1 a:hover{
+  color: #0ea057;
+} */
+
 .btn-suporte{
   position: absolute;
   left: 2%;
