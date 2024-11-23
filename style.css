@@ -33,20 +33,10 @@ body {
 }
 
 
-@keyframes loop_fundo {
-  0% {
-    background-image: url("./assets/loop1.jpg");
-  }
-  50% {
-    background-image: url("./assets/loop2.jpg");
-  }
-  100% {
-    background-image: url("./assets/loop3.jpg");
-  }
-}
+
 /* Estilos para os links - Usado em todos os arquivos HTML */
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
   text-decoration: none;
@@ -64,44 +54,26 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes colorChange {
-  0% {
-    color: white;
-  }
-  25% {
-    color: #13dc78;
-  }
-  50% {
-    color: #0ea057;
-  }
-
-  75% {
-    color: #13dc78;
-  }
-  100% {
-    color: white;
-  }
+/* ============================================== */
+/* ANIMAÇÃO DA PAGINA INDEX H1 index.html*/
+.index-title {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  backdrop-filter: blur(50px);
 }
-
 .index-title h1 a {
   font-size: 60px;
-  text-align: center;
-  margin-top: 20px;
+  
   display: block;
   animation: colorChange 7s infinite; 
+ 
+  
 }
-
-
-/* .index-title h1 a{
-  font-size: 60px;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  display: block;
-}
-.index-title h1 a:hover{
-  color: #0ea057;
-} */
+/* ============================================== */
 
 .btn-suporte{
   position: absolute;
@@ -120,8 +92,8 @@ button:hover {
 .logotipo img {
   width: 300px;
 }
-
-/* Estilos para a nav desquerda "Buscar" */
+/* ============================================== */
+/* Estilos para a nav esquerda "Buscar" */
 .nav-equerda {
   display: flex;
   align-items: center;
@@ -148,6 +120,7 @@ button:hover {
   width: 120px;
   font-size: 16px;
 }
+/* ============================================== */
 /* Estilos para a nav direita "Sobre - Login - lupa- cadastre-se" */
 .nav-links {
   display: flex;
@@ -172,7 +145,7 @@ button:hover {
   background-color: #39619c;
   transform: scale(1.05);
 }
-
+/* ============================================== */
 /* Estilos para a div-contato - Usado em todos os arquivos HTML */
 .div-contato {
   background: linear-gradient(to right, #055f6eff, #052131ff);
@@ -201,7 +174,7 @@ button:hover {
 .img-contato {
   max-width: 30px;
 }
-
+/* ============================================== */
 /* Estilos para a página de suporte - suport.html */
 main {
   background: #052131ff;
@@ -249,7 +222,7 @@ main {
   background-color: darkslategrey;
   align-content: center;
 }
-
+/* ============================================== */
 /* Estilos para o formulário de cadastro - cadastro.html */
 .form {
   background-color: #055f6eff;
@@ -308,7 +281,7 @@ select {
 .btn-form:hover {
   background-color: #0c6d7a;
 }
-
+/* ============================================== */
 /* Estilos para a página de filmes - PaginaFilme.html */
 .filmes {
   padding: 20px;
@@ -378,6 +351,7 @@ select {
   background-size: cover;
   margin-bottom: 70px;
 }
+/* ============================================== */
 /* Estilos para o botão de acesso - Usado em todos os arquivos HTML */
 .botao-acesso {
   background-color: darkseagreen;
@@ -390,7 +364,7 @@ select {
   cursor: pointer;
   display: block;
 }
-
+/* ============================================== */
 /* Estilos para o grupo de rádio - Usado em cadastro.html */
 .radio-group {
   display: flex;
@@ -425,9 +399,8 @@ input[type="tel"]:focus {
   outline: none;
 }
 
-
-
-/* Página Login (Lucas e Wedson)*/
+/* ============================================== */
+/* Estilos para A Página Login (Lucas e Wedson)*/
 .wrapper1 {
   width: 420px;
   background: transparent;
@@ -538,8 +511,39 @@ input[type="tel"]:focus {
 .register-link1 p a:hover {
   text-decoration: underline;
 }
+/* ============================================== */
+/* ANIMAÇÃO DA PAGINA INDEX IMG FUNDO */
+@keyframes loop_fundo {
+  0% {
+    background-image: url("./assets/loop1.jpg");
+  }
+  50% {
+    background-image: url("./assets/loop2.jpg");
+  }
+  100% {
+    background-image: url("./assets/loop3.jpg");
+  }
+}
+/* ANIMAÇÃO DA PAGINA INDEX H1 */
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #13dc78;
+  }
+  50% {
+    color: #0ea057;
+  }
 
-
+  75% {
+    color: #13dc78;
+  }
+  100% {
+    color: white;
+  }
+}
+/* ============================================== */
 
 /*              REPONSIVIDADE*/
 @media (max-width: 450px) {
