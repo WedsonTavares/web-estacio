@@ -121,6 +121,22 @@ button:hover {
   font-size: 16px;
 }
 /* ============================================== */
+
+/* Estilos para apag-sobre - Usado em todos os arquivos HTML */
+.pag-sobre  h2, h1{
+  text-align: center;
+  
+  font-size: 35px;
+}
+
+.pragrafo-sobre{
+  text-align: left;
+  font-size: 20px;
+
+}
+
+/* ============================================== */
+
 /* Estilos para a nav direita "Sobre - Login - lupa- cadastre-se" */
 .nav-links {
   display: flex;

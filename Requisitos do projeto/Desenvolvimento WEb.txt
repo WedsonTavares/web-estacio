@@ -27,5 +27,10 @@ As páginas estão devidamente estilizadas (usando CSS) [1 ponto].
 O sistema possui um menu de navegação entre as páginas [1 ponto].
 As páginas possuem ilustrações (imagens e textos apropriados) e algumas interações (Javascript) de acordo com o tema escolhido [1 ponto].
 A página possui um formulário de cadastro de informações contendo pelo menos 5 campos de entrada de dados e botão para salvar as informações em banco de dados(PHP)[2 pontos].
-O formulário valida os dados de entrada(em JS) indicando ao usuário a forma correta de inserir os dados nos campos por meio de mensagens interativas(JS E CSS) e impedindo o usuário de prosseguir sem preencher os campos corretamente(JS).[2 pontos]
+O formulário valida os dados de entrada(em JS) indicando ao usuário a forma correta de inserir os dados nos campos por meio de mensagens interativas(JS E CSS) e impedindo o usuário de prosseguir sem preencher os campos corretamente(JS).[2 pontos].
+A página possui uma tabela de exibição dos dados salvos, mostrando cada
+campo como uma coluna da tabela (usando PHP para ler os dados do
+banco). [1 pontos]
+- Os códigos estão bem organizados (formatados e indentados) e
+documentados com comentários adequados [1 ponto]
 
