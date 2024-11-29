@@ -9,16 +9,15 @@
 }
 
 /* Estilos para o body - Usado em todos os arquivos HTML */
-body {
+/* body {
   background: linear-gradient(to right, #055f6eff, #052131ff);
-  font-family: "Lato", sans-serif;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  scroll-behavior: auto;
-  color: white;
-}
+  align-items: center;
+  justify-content: center;
+  color: #fff; 
+
+} */
 
 /* Estilos para a imagem de fundo - Usado em index.html */
 .img-fundo {
@@ -63,12 +62,14 @@ header {
   border-radius: 30px;
   backdrop-filter: blur(50px);
 }
+
 .index-title h1 a {
   font-size: 60px;
 
   display: block;
   animation: colorChange 7s infinite;
 }
+
 /* ============================================== */
 
 .btn-suporte {
@@ -88,6 +89,7 @@ button:hover {
 .logotipo img {
   width: 300px;
 }
+
 /* ============================================== */
 /* Estilos para a nav esquerda "Buscar" */
 .nav-equerda {
@@ -116,6 +118,7 @@ button:hover {
   width: 120px;
   font-size: 16px;
 }
+
 /* ============================================== */
 
 /* Estilos para apag-sobre - Usado em todos os arquivos HTML */
@@ -157,6 +160,7 @@ h1 {
   background-color: #39619c;
   transform: scale(1.05);
 }
+
 /* ============================================== */
 /* Estilos para a div-contato - Usado em todos os arquivos HTML */
 .div-contato {
@@ -186,6 +190,7 @@ h1 {
 .img-contato {
   max-width: 30px;
 }
+
 /* ============================================== */
 /* Estilos para a página de suporte - suport.html */
 main {
@@ -234,26 +239,28 @@ main {
   background-color: darkslategrey;
   align-content: center;
 }
+
 /* ============================================== */
 /* Estilos para o formulário de cadastro - cadastro.html */
-.form {
-  background-color: #055f6eff;
-  margin: 0 auto;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
+.container-form {
+  
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 55%;
+  height: 50%;
+  margin-top: 75px;
+  width: 50%;
+  left: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 30px 40px;
+  background: linear-gradient(to right, #055f6eff, #052131ff);
 }
-.step1,
-.step2 h2 {
-  text-align: center;
-  font-size: 22px;
-  bottom: 10px;
-}
-label {
+
+.label {
+
   display: block;
   margin-bottom: 8px;
   font-weight: bolder;
@@ -261,11 +268,11 @@ label {
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="email"],
 input[type="nome"],
 input[type="cpf"],
 input[type="number"],
-input[type="password"],
 select {
   width: 100%;
   padding: 10px;
@@ -273,6 +280,40 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+input.cep-form{
+width: 76%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+
+}
+#searchAddress{
+  color: #0c0c0c;
+  background-color: #0ea057;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin-left: 20px;
+}
+
+
+
+
+.step1 h2,
+.step2 h2 {
+    font-size: 30px;
+     text-align: center;
+  
+  
+}
+
 
 .btn-form {
   color: #0c0c0c;
@@ -287,10 +328,25 @@ select {
   font-weight: bold;
   border: none;
 }
+.btn-enviar {
+  color: #0c0c0c;
+  background-color: #0ea057;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+   width: 100%;
+  }
 
 .btn-form:hover {
   background-color: #0c6d7a;
 }
+
 /* ============================================== */
 /* Estilos para a página de filmes - PaginaFilme.html */
 .filmes {
@@ -361,6 +417,7 @@ select {
   background-size: cover;
   margin-bottom: 70px;
 }
+
 /* ============================================== */
 /* Estilos para o botão de acesso - Usado em todos os arquivos HTML */
 .botao-acesso {
@@ -374,6 +431,7 @@ select {
   cursor: pointer;
   display: block;
 }
+
 /* ============================================== */
 /* Estilos para o grupo de rádio - Usado em cadastro.html */
 
@@ -396,21 +454,7 @@ select {
   accent-color: #055f6eff;
 }
 
-/* Estilos para o input de telefone - Usado em cadastro.html */
-input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-}
 
-input[type="tel"]:focus {
-  border-color: #0ea057;
-  outline: none;
-}
 
 /* ============================================== */
 /* Estilos para A Página Login (Lucas e Wedson)*/
@@ -435,6 +479,7 @@ input[type="tel"]:focus {
   font-size: 36px;
   text-align: center;
 }
+
 .wrapper1 .input-box1 {
   position: relative;
   width: 100%;
@@ -531,27 +576,33 @@ input[type="tel"]:focus {
   margin-top: -300px;
   font-size: 30px;
 }
+
 /* ============================================== */
 /* ANIMAÇÃO DA PAGINA INDEX IMG FUNDO */
 @keyframes loop_fundo {
   0% {
     background-image: url("./assets/loop1.jpg");
   }
+
   50% {
     background-image: url("./assets/loop2.jpg");
   }
+
   100% {
     background-image: url("./assets/loop3.jpg");
   }
 }
+
 /* ANIMAÇÃO DA PAGINA INDEX H1 */
 @keyframes colorChange {
   0% {
     color: white;
   }
+
   25% {
     color: #13dc78;
   }
+
   50% {
     color: #0ea057;
   }
@@ -559,16 +610,19 @@ input[type="tel"]:focus {
   75% {
     color: #13dc78;
   }
+
   100% {
     color: white;
   }
 }
+
 /* ============================================== */
 
 /*              REPONSIVIDADE*/
 @media (max-width: 450px) {
   .logotipo img {
-    width: 120px; /* Ajuste o tamanho conforme necessário */
+    width: 120px;
+    /* Ajuste o tamanho conforme necessário */
   }
 
   .nav-equerda {

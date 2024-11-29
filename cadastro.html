@@ -9,6 +9,17 @@
 
   <body>
     <header>
+      <style>
+        body{
+  background: linear-gradient(to right, #055f6eff, #052131ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+padding-bottom: 100px;
+}
+      </style>
       <!-- Logotipo -->
       <div class="logotipo">
         <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
@@ -44,9 +55,9 @@
 
     <!-- Formulário de cadastro -->
     <div class="container-form">
-      <form id="myForm" class="form" action="banco.php" method="POST">
+      <form id="myForm" action="cadastro.php" method="POST">
         <!-- Etapa 1: Informações Pessoais -->
-        <div class="step2" id="step1">
+        <div class="step1" id="step1">
           <h2>Informações Pessoais</h2>
           <label for="nome">Nome:</label>
           <input type="text" id="nome" name="nome" required />
@@ -60,20 +71,26 @@
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
 
-          <button type="button" id="nextBtn" class="btn-form">Próximo</button>
+          <button type="button" id="nextBtn" class="btn-enviar">Próximo</button>
         </div>
 
         <!-- Etapa 2: Endereço -->
         <div class="step2" id="step2" style="display: none">
           <h2>Endereço</h2>
-          <label for="cep">CEP:</label>
+          <label for="cep">CEP:</label><br>
+          
           <input
             type="text"
+            class="cep-form"
             id="cep"
             name="cep"
             placeholder="Digite seu CEP"
             required
-          />
+            
+            
+          /><button type="button" id="searchAddress" class="btn-form">
+            Buscar Endereço
+          </button><br/>
 
           <label for="numero">Número:</label>
           <input
@@ -110,20 +127,20 @@
             placeholder="Cidade"
             required
           />
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" placeholder="Estado" label="estado" maxlength="2" />
 
         
-          <button type="button" id="searchAddress" class="btn-form">
-            Buscar Endereço
-          </button>
-          <div id="addressResult"></div>
+          
+          
 
-          <button type="submit" class="btn-form">Enviar</button>
+          <button id="btn-enviar" type="submit" class="btn-enviar">Enviar</button>
         </div>
       </form>
     </div>
 
     <!-- Barra de suporte ao final da página -->
-    <!-- <div class="div-contato">
+    <div class="div-contato">
       <button class="btn-suporte">
         <a id="suporte" target="_blank" href="suport.html">Suporte</a>
       </button>
@@ -147,7 +164,7 @@
           /></a>
         </li>
       </ul>
-    </div> -->
+    </div>
 
     <script src="script.js"></script>
     <!-- Script para animação de carregamento -->
