@@ -2,7 +2,7 @@
 $servidor = "localhost"; // Define o servidor do banco de dados
 $usuario = "root"; // Define o usuário do banco de dados
 $password = ""; // Define a senha do banco de dados
-$banco = "cadastro"; // Define o nome do banco de dados
+$banco = "cadastro3"; // Define o nome do banco de dados
 
 // Cria uma nova conexão com o banco de dados
 $conexao = new mysqli($servidor, $usuario, $password);

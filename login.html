@@ -52,15 +52,15 @@
     <div class="img-fundo"></div>
     <!-- Formulário de login -->
     <div class="wrapper1">
-      <form action="">
+      <form id="loginForm">
         <h1>Login</h1>
         <div class="input-box1">
-          <input type="text" placeholder="Usuário" required />
-          <i class="bx bxs-user"></i>
+          <input type="email" id="email" placeholder="E-mail" required />
+          <div id="erro-email" class="mensagem-erro"></div>
         </div>
         <div class="input-box1">
-          <input type="password" placeholder="Senha" required />
-          <i class="bx bxs-lock-alt"></i>
+          <input type="password" id="password" placeholder="Senha" required />
+          <div id="erro-password" class="mensagem-erro"></div>
         </div>
 
         <div class="remember-forgot1">
