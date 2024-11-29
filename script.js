@@ -106,21 +106,4 @@ function validaForm() {
 }
 
 
-// ATIVAÇÃO DO BOTÃO BUSCAR DO HEADER
-document.addEventListener("DOMContentLoaded", function () {
-  const selectBuscar = document.getElementById("buscar");
-
-  if (selectBuscar) {
-    selectBuscar.addEventListener("change", function () {
-      const selectedValue = this.value;
-
-      // Verifica se uma opção válida foi selecionada
-      if (selectedValue) {
-        // Redireciona para a URL correspondente
-        window.location.href = selectedValue;
-      }
-    });
-  }
-});
-
 

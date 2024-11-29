@@ -10,17 +10,17 @@
     <div class="logotipo">
       <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
     </div>
-
-    <nav class="nav-equerda">
-      <label for="buscar">Buscar</label>
-      <select name="buscar" id="">
-        <option value="buscar"></option>
-        <option value="buscar">Animes</option>
-        <option value="buscar">Filmes</option>
-        <option value="buscar">Series</option>
-        <option value="buscar">Jogos</option>
-      </select>
-    </nav>
+ <!-- Navegação Buscar -->
+ <nav class="nav-equerda">
+  <label for="buscar">Buscar</label>
+  <select name="buscar" id="buscar">
+    <option value="">Selecione</option>
+    <option value="PaginaFilme.html?categoria=animes">Animes</option>
+    <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
+    <option value="PaginaFilme.html?categoria=series">Series</option>
+    <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
+  </select>
+</nav>
     <nav>
       <ul class="nav-links">
         <li><a target="_blank" href="sobre.html">Sobre</a></li>
@@ -131,7 +131,6 @@
         </li>
       </ul>
     </div>
-  </body>
   <script src="script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -168,4 +167,21 @@
       });
     });
   </script>
+        <!-- Script validar os links da Barra Buscar-->
+        <script> document.addEventListener("DOMContentLoaded", function () {
+          const selectBuscar = document.getElementById("buscar");
+        
+          if (selectBuscar) {
+            selectBuscar.addEventListener("change", function () {
+              const selectedValue = this.value;
+        
+              // Verifica se uma opção válida foi selecionada
+              if (selectedValue) {
+                // Redireciona para a URL correspondente
+                window.location.href = selectedValue;
+              }
+            });
+          }
+        });</script>
+  </body>
 </html>

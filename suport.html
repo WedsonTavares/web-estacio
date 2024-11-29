@@ -1,150 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>CineQuest</title>
-</head>
+  </head>
 
-<body style="min-height: auto;">
-    
+  <body style="min-height: auto">
     <header>
-        <!-- Logotipo -->
-        <div class="logotipo">
-            <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
-        </div>
+      <!-- Logotipo -->
+      <div class="logotipo">
+        <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
+      </div>
 
-        <!-- Navegação à esquerda -->
-        <nav class="nav-equerda">
-            <label for="buscar">Buscar</label>
-            <select name="buscar" id="">
-                <option value="buscar"></option>
-                <option value="buscar">Animes</option>
-                <option value="buscar">Filmes</option>
-                <option value="buscar">Series</option>
-                <option value="buscar">Jogos</option>
-            </select>
-            
-        </nav>
+      <!-- Navegação Buscar -->
+      <nav class="nav-equerda">
+        <label for="buscar">Buscar</label>
+        <select name="buscar" id="buscar">
+          <option value="">Selecione</option>
+          <option value="PaginaFilme.html?categoria=animes">Animes</option>
+          <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
+          <option value="PaginaFilme.html?categoria=series">Series</option>
+          <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
+        </select>
+      </nav>
 
-        <!-- Navegação principal -->
-        <nav>
-            <ul class="nav-links">
-                <li><a target="_blank" href="sobre.html">Sobre</a></li>
-                <li>
-                    <a target="_blank" href="login.html">
-                        <span>Login</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="PaginaFilme.html"><img src="assets/loupe (1).png" alt="Buscar" /></a>
-                </li>
-                <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </nav>
+      <!-- Navegação principal -->
+      <nav>
+        <ul class="nav-links">
+          <li><a target="_blank" href="sobre.html">Sobre</a></li>
+          <li>
+            <a target="_blank" href="login.html">
+              <span>Login</span>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="PaginaFilme.html"
+              ><img src="assets/loupe (1).png" alt="Buscar"
+            /></a>
+          </li>
+          <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Seção de ajuda -->
     <main>
-        <div class="ajuda">
-            <h1>Como posso ajudar?</h1>
-            <input type="search" placeholder="Busque por palavra chave"
-                style="color: #055f6eff; width: 90%; height: 25px; border-radius: 8px;">
-        </div>
+      <div class="ajuda">
+        <h1>Como posso ajudar?</h1>
+        <input
+          type="search"
+          placeholder="Busque por palavra chave"
+          style="color: #055f6eff; width: 90%; height: 25px; border-radius: 8px"
+        />
+      </div>
 
-        <!-- Seção de suporte -->
-        <div class="suporte" style="border-top-left-radius: 8px; border-top-right-radius: 8px;">
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
-                <a class="sup">
-                    <h3>Dúvida</h3>
-                </a>
-            </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
-                <a class="sup">
-                    <h3>Catálogo</h3>
-                </a>
-            </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
-                <a class="sup">
-                    <h3>Conta</h3>
-                </a>
-            </div>
+      <!-- Seção de suporte -->
+      <div
+        class="suporte"
+        style="border-top-left-radius: 8px; border-top-right-radius: 8px"
+      >
+        <div
+          class="but_sup"
+          onclick="window.location.href='paginaContrucao.html'"
+        >
+          <a class="sup">
+            <h3>Dúvida</h3>
+          </a>
         </div>
-        <div class="suporte" style="border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
-                <a class="sup">
-                    <h3>FAQ</h3>
-                </a>
-            </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
-                <a class="sup">
-                    <h3>Sobre Nós</h3>
-                </a>
-            </div>
-            <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
-                <a class="sup">
-                    <h3>Contato</h3>
-                </a>
-            </div>
+        <div
+          class="but_sup"
+          onclick="window.location.href='paginaContrucao.html'"
+        >
+          <a class="sup">
+            <h3>Catálogo</h3>
+          </a>
         </div>
+        <div
+          class="but_sup"
+          onclick="window.location.href='paginaContrucao.html'"
+        >
+          <a class="sup">
+            <h3>Conta</h3>
+          </a>
+        </div>
+      </div>
+      <div
+        class="suporte"
+        style="border-bottom-right-radius: 8px; border-bottom-left-radius: 8px"
+      >
+        <div
+          class="but_sup"
+          onclick="window.location.href='paginaContrucao.html'"
+        >
+          <a class="sup">
+            <h3>FAQ</h3>
+          </a>
+        </div>
+        <div
+          class="but_sup"
+          onclick="window.location.href='paginaContrucao.html'"
+        >
+          <a class="sup">
+            <h3>Sobre Nós</h3>
+          </a>
+        </div>
+        <div
+          class="but_sup"
+          onclick="window.location.href='paginaContrucao.html'"
+        >
+          <a class="sup">
+            <h3>Contato</h3>
+          </a>
+        </div>
+      </div>
     </main>
 
     <!-- Contato e suporte -->
     <div class="div-contato">
-        <ul class="contato">
-            
-            <li>
-                <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn" /></a>
-            </li>
-            <li>
-                <a target="_blank" href="https://github.com/WedsonTavares/web-estacio"><img class="img-contato" src="assets/github.png" alt="GitHub" /></a>
-            </li>
-            <li>
-                <a href=""><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp" /></a>
-            </li>
-        </ul>
+      <ul class="contato">
+        <li>
+          <a href=""
+            ><img
+              class="img-contato"
+              src="assets/linkedin (1).png"
+              alt="LinkedIn"
+          /></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/WedsonTavares/web-estacio"
+            ><img class="img-contato" src="assets/github.png" alt="GitHub"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp"
+          /></a>
+        </li>
+      </ul>
     </div>
 
-    
     <script src="script.js"></script>
     <!-- Script para animação de carregamento -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const links = document.querySelectorAll("a");
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a");
 
-          links.forEach((link) => {
-            link.addEventListener("click", function (event) {
-              event.preventDefault();
-              const url = this.href;
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const url = this.href;
 
-              // Cria a div de carregamento 
-              const loading = document.createElement("div");
-              loading.id = "loading";
-              loading.style.position = "fixed";
-              loading.style.top = "0";
-              loading.style.left = "0";
-              loading.style.width = "100%";
-              loading.style.height = "100%";
-              loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-              loading.style.display = "flex";
-              loading.style.justifyContent = "center";
-              loading.style.alignItems = "center";
-              loading.style.color = "#fff";
-              loading.style.fontSize = "2em";
-              loading.innerText = "Carregando...";
+            // Cria a div de carregamento
+            const loading = document.createElement("div");
+            loading.id = "loading";
+            loading.style.position = "fixed";
+            loading.style.top = "0";
+            loading.style.left = "0";
+            loading.style.width = "100%";
+            loading.style.height = "100%";
+            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            loading.style.display = "flex";
+            loading.style.justifyContent = "center";
+            loading.style.alignItems = "center";
+            loading.style.color = "#fff";
+            loading.style.fontSize = "2em";
+            loading.innerText = "Carregando...";
 
-              document.body.appendChild(loading);
+            document.body.appendChild(loading);
 
-               // Aguarda 0.4 segundos antes de redirecionar
-              setTimeout(() => {
-                window.location.href = url;
-              }, 400);
-            });
+            // Aguarda 0.4 segundos antes de redirecionar
+            setTimeout(() => {
+              window.location.href = url;
+            }, 400);
           });
         });
+      });
     </script>
-</body>
+    <!-- Script validar os links da Barra Buscar-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const selectBuscar = document.getElementById("buscar");
 
+        if (selectBuscar) {
+          selectBuscar.addEventListener("change", function () {
+            const selectedValue = this.value;
+
+            // Verifica se uma opção válida foi selecionada
+            if (selectedValue) {
+              // Redireciona para a URL correspondente
+              window.location.href = selectedValue;
+            }
+          });
+        }
+      });
+    </script>
+  </body>
 </html>

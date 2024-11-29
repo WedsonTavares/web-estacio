@@ -32,8 +32,6 @@ body {
   animation: loop_fundo 9s linear infinite;
 }
 
-
-
 /* Estilos para os links - Usado em todos os arquivos HTML */
 a {
   font-family: "Lato", sans-serif;
@@ -67,19 +65,17 @@ header {
 }
 .index-title h1 a {
   font-size: 60px;
-  
+
   display: block;
-  animation: colorChange 7s infinite; 
- 
-  
+  animation: colorChange 7s infinite;
 }
 /* ============================================== */
 
-.btn-suporte{
+.btn-suporte {
   position: absolute;
   left: 2%;
   height: 40px;
-  background-color:#08496e;
+  background-color: #08496e;
   border: none;
   border-radius: 8px;
   width: 120px;
@@ -123,16 +119,16 @@ button:hover {
 /* ============================================== */
 
 /* Estilos para apag-sobre - Usado em todos os arquivos HTML */
-.pag-sobre  h2, h1{
+.pag-sobre h2,
+h1 {
   text-align: center;
-  
+
   font-size: 35px;
 }
 
-.pragrafo-sobre{
+.pragrafo-sobre {
   text-align: left;
   font-size: 20px;
-
 }
 
 /* ============================================== */
@@ -248,18 +244,16 @@ main {
   flex-direction: column;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 55%;
-  
-  
 }
-.step1, .step2 h2 {
+.step1,
+.step2 h2 {
   text-align: center;
   font-size: 22px;
   bottom: 10px;
 }
 label {
-
   display: block;
   margin-bottom: 8px;
   font-weight: bolder;
@@ -583,7 +577,6 @@ input[type="tel"]:focus {
     width: 100px;
     justify-content: center;
     flex-direction: column;
-   
   }
 
   .nav-links a {
@@ -594,6 +587,4 @@ input[type="tel"]:focus {
   .nav-links li {
     margin-left: 3px;
   }
-
- 
 }

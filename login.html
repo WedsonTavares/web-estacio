@@ -10,7 +10,7 @@
     />
     <title>Login</title>
   </head>
-  <body style="display: flex; align-items: center;">
+  <body style="display: flex; align-items: center">
     <header>
       <!-- Logotipo -->
       <div class="logotipo">
@@ -19,15 +19,15 @@
         /></a>
       </div>
 
-      <!-- Navegação à esquerda -->
+      <!-- Navegação Buscar -->
       <nav class="nav-equerda">
         <label for="buscar">Buscar</label>
-        <select name="buscar" id="">
-          <option value="buscar"></option>
-          <option value="buscar">Animes</option>
-          <option value="buscar">Filmes</option>
-          <option value="buscar">Series</option>
-          <option value="buscar">Jogos</option>
+        <select name="buscar" id="buscar">
+          <option value="">Selecione</option>
+          <option value="PaginaFilme.html?categoria=animes">Animes</option>
+          <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
+          <option value="PaginaFilme.html?categoria=series">Series</option>
+          <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
         </select>
       </nav>
 
@@ -41,16 +41,17 @@
             </a>
           </li>
           <li>
-            <a href="PaginaFilme.html"><img src="assets/loupe (1).png" alt="Buscar" /></a>
+            <a href="PaginaFilme.html"
+              ><img src="assets/loupe (1).png" alt="Buscar"
+            /></a>
           </li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
     </header>
-   <div class="img-fundo"></div>
+    <div class="img-fundo"></div>
     <!-- Formulário de login -->
     <div class="wrapper1">
-    
       <form action="">
         <h1>Login</h1>
         <div class="input-box1">
@@ -81,7 +82,6 @@
       </button>
 
       <ul class="contato">
-        
         <li>
           <a href=""
             ><img
@@ -103,22 +103,24 @@
       </ul>
     </div>
     <script src="script.js"></script>
-         <!-- Script validar os links da Barra Buscar-->
-         <script> document.addEventListener("DOMContentLoaded", function () {
-          const selectBuscar = document.getElementById("buscar");
-        
-          if (selectBuscar) {
-            selectBuscar.addEventListener("change", function () {
-              const selectedValue = this.value;
-        
-              // Verifica se uma opção válida foi selecionada
-              if (selectedValue) {
-                // Redireciona para a URL correspondente
-                window.location.href = selectedValue;
-              }
-            });
-          }
-        });</script>
+    <!-- Script validar os links da Barra Buscar-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const selectBuscar = document.getElementById("buscar");
+
+        if (selectBuscar) {
+          selectBuscar.addEventListener("change", function () {
+            const selectedValue = this.value;
+
+            // Verifica se uma opção válida foi selecionada
+            if (selectedValue) {
+              // Redireciona para a URL correspondente
+              window.location.href = selectedValue;
+            }
+          });
+        }
+      });
+    </script>
     <!-- Script para animação de carregamento -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -153,6 +155,24 @@
             }, 400);
           });
         });
+      });
+    </script>
+    <!-- Script validar os links da Barra Buscar-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const selectBuscar = document.getElementById("buscar");
+
+        if (selectBuscar) {
+          selectBuscar.addEventListener("change", function () {
+            const selectedValue = this.value;
+
+            // Verifica se uma opção válida foi selecionada
+            if (selectedValue) {
+              // Redireciona para a URL correspondente
+              window.location.href = selectedValue;
+            }
+          });
+        }
       });
     </script>
   </body>
