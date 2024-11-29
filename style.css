@@ -376,6 +376,9 @@ select {
 }
 /* ============================================== */
 /* Estilos para o grupo de rádio - Usado em cadastro.html */
+
+
+
 .radio-group {
   display: flex;
   align-items: center;
@@ -520,6 +523,13 @@ input[type="tel"]:focus {
 
 .register-link1 p a:hover {
   text-decoration: underline;
+}
+
+.mensagem-erro {
+  color: red;
+  text-align: center;
+  margin-top: -300px;
+  font-size: 30px;
 }
 /* ============================================== */
 /* ANIMAÇÃO DA PAGINA INDEX IMG FUNDO */
