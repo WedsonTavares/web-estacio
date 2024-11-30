@@ -7,6 +7,17 @@
 
 CineQuest é um site que oferece uma plataforma para buscar e explorar filmes, animes, séries e jogos. O site inclui várias páginas, como a página inicial, página de login, página de cadastro, página de suporte e uma página sobre. Cada página é estilizada de forma consistente usando CSS e inclui animações de carregamento para melhorar a experiência do usuário.
 
+
+## Tecnologias Utilizadas
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <a href="#" style="padding: 10px 20px; background-color: #E34F26; color: white; text-decoration: none; border-radius: 5px;">HTML5</a>
+  <a href="#" style="padding: 10px 20px; background-color: #1572B6; color: white; text-decoration: none; border-radius: 5px;">CSS3</a>
+  <a href="#" style="padding: 10px 20px; background-color: #F7DF1E; color: black; text-decoration: none; border-radius: 5px;">JavaScript</a>
+  <a href="#" style="padding: 10px 20px; background-color: #777BB4; color: white; text-decoration: none; border-radius: 5px;">PHP</a>
+  <a href="#" style="padding: 10px 20px; background-color: #4479A1; color: white; text-decoration: none; border-radius: 5px;">MySQL</a>
+</div>
+
 ## Estrutura do Projeto
 
 ### Arquivos HTML
@@ -15,6 +26,8 @@ CineQuest é um site que oferece uma plataforma para buscar e explorar filmes, a
 - **login.html**: Página de login, onde os usuários podem inserir suas credenciais para acessar suas contas.
 - **cadastro.html**: Página de cadastro, onde novos usuários podem se registrar fornecendo informações pessoais e de endereço.
 - **suport.html**: Página de suporte, oferecendo várias categorias de ajuda e suporte ao usuário.
+- **paginaContrucao**: Página acionada quando é redirecionado para paginas inacabadas.
+- **paginaFilme**: Página que contém as sessões de filmes.
 - **sobre.html**: Página sobre, fornecendo informações sobre o site e sua missão.
 
 ### Arquivo CSS
