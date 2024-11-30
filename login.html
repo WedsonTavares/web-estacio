@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Login</title>
-  </head>
-  <body>
-    <header>
-      <!-- Logotipo -->
-      <div class="logotipo">
-        <a href="index.html"
-          ><img src="assets/logo2.png" alt="imagem logotipo"
-        /></a>
-      </div>
 
-      <!-- Navegação Buscar -->
-      <nav class="nav-equerda">
-        <label for="buscar">Buscar</label>
-        <select name="buscar" id="buscar">
-          <option value="">Selecione</option>
-          <option value="PaginaFilme.html?categoria=animes">Animes</option>
-          <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
-          <option value="PaginaFilme.html?categoria=series">Series</option>
-          <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
-        </select>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Login</title>
+</head>
 
-      <!-- Navegação principal -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="sobre.html">Sobre</a></li>
-          <li>
-            <a href="login.html">
-              <span>Login</span>
-            </a>
-          </li>
-          <li>
-            <a href="PaginaFilme.html"
-              ><img src="assets/loupe (1).png" alt="Buscar"
-            /></a>
-          </li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="img-fundo"></div>
-    <!-- Formulário de login -->
-     <div class="center-container">
+<body>
+  <header>
+    <!-- Logotipo -->
+    <div class="logotipo">
+      <a href="index.html"><img src="assets/logo2.png" alt="imagem logotipo" /></a>
+    </div>
+
+    <!-- Navegação Buscar -->
+    <nav class="nav-equerda">
+      <label for="buscar">Buscar</label>
+      <select name="buscar" id="buscar">
+        <option value="">Selecione</option>
+        <option value="PaginaFilme.html?categoria=animes">Animes</option>
+        <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
+        <option value="PaginaFilme.html?categoria=series">Series</option>
+        <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
+      </select>
+    </nav>
+
+    <!-- Navegação principal -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li>
+          <a href="login.html">
+            <span>Login</span>
+          </a>
+        </li>
+        <li>
+          <a href="PaginaFilme.html"><img src="assets/loupe (1).png" alt="Buscar" /></a>
+        </li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="img-fundo"></div>
+  <!-- Formulário de login -->
+  <div class="center-container">
     <div class="wrapper1">
       <form id="loginForm">
         <h1>Login</h1>
@@ -77,105 +72,98 @@
     </div>
   </div>
 
-    <!-- Barra de suporte ao final da página -->
-    <div class="div-contato">
-      <button class="btn-suporte">
-        <a id="suporte" target="_blank" href="suport.html">Suporte</a>
-      </button>
+  <!-- Barra de suporte ao final da página -->
+  <div class="div-contato">
+    <button class="btn-suporte">
+      <a id="suporte" target="_blank" href="suport.html">Suporte</a>
+    </button>
 
-      <ul class="contato">
-        <li>
-          <a href=""
-            ><img
-              class="img-contato"
-              src="assets/linkedin (1).png"
-              alt="LinkedIn"
-          /></a>
-        </li>
-        <li>
-          <a target="_blank" href="https://github.com/WedsonTavares/web-estacio"
-            ><img class="img-contato" src="assets/github.png" alt="GitHub"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp"
-          /></a>
-        </li>
-      </ul>
-    </div>
-    <script src="script.js"></script>
-    <!-- Script validar os links da Barra Buscar-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const selectBuscar = document.getElementById("buscar");
+    <ul class="contato">
+      <li>
+        <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn" /></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/WedsonTavares/web-estacio"><img class="img-contato"
+            src="assets/github.png" alt="GitHub" /></a>
+      </li>
+      <li>
+        <a href=""><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp" /></a>
+      </li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+  <!-- Script validar os links da Barra Buscar-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selectBuscar = document.getElementById("buscar");
 
-        if (selectBuscar) {
-          selectBuscar.addEventListener("change", function () {
-            const selectedValue = this.value;
+      if (selectBuscar) {
+        selectBuscar.addEventListener("change", function () {
+          const selectedValue = this.value;
 
-            // Verifica se uma opção válida foi selecionada
-            if (selectedValue) {
-              // Redireciona para a URL correspondente
-              window.location.href = selectedValue;
-            }
-          });
-        }
-      });
-    </script>
-    <!-- Script para animação de carregamento -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll("a");
+          // Verifica se uma opção válida foi selecionada
+          if (selectedValue) {
+            // Redireciona para a URL correspondente
+            window.location.href = selectedValue;
+          }
+        });
+      }
+    });
+  </script>
+  <!-- Script para animação de carregamento -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a");
 
-        links.forEach((link) => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const url = this.href;
+      links.forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          const url = this.href;
 
-            // Cria a Div de carregamento com 0.4 segundos
-            const loading = document.createElement("div");
-            loading.id = "loading";
-            loading.style.position = "fixed";
-            loading.style.top = "0";
-            loading.style.left = "0";
-            loading.style.width = "100%";
-            loading.style.height = "100%";
-            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-            loading.style.display = "flex";
-            loading.style.justifyContent = "center";
-            loading.style.alignItems = "center";
-            loading.style.color = "#fff";
-            loading.style.fontSize = "2em";
-            loading.innerText = "Carregando...";
+          // Cria a Div de carregamento com 0.4 segundos
+          const loading = document.createElement("div");
+          loading.id = "loading";
+          loading.style.position = "fixed";
+          loading.style.top = "0";
+          loading.style.left = "0";
+          loading.style.width = "100%";
+          loading.style.height = "100%";
+          loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+          loading.style.display = "flex";
+          loading.style.justifyContent = "center";
+          loading.style.alignItems = "center";
+          loading.style.color = "#fff";
+          loading.style.fontSize = "2em";
+          loading.innerText = "Carregando...";
 
-            document.body.appendChild(loading);
+          document.body.appendChild(loading);
 
-            // Aguarda 0.4 segundos antes de redirecionar
-            setTimeout(() => {
-              window.location.href = url;
-            }, 400);
-          });
+          // Aguarda 0.4 segundos antes de redirecionar
+          setTimeout(() => {
+            window.location.href = url;
+          }, 400);
         });
       });
-    </script>
-    <!-- Script validar os links da Barra Buscar-->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const selectBuscar = document.getElementById("buscar");
+    });
+  </script>
+  <!-- Script validar os links da Barra Buscar-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selectBuscar = document.getElementById("buscar");
 
-        if (selectBuscar) {
-          selectBuscar.addEventListener("change", function () {
-            const selectedValue = this.value;
+      if (selectBuscar) {
+        selectBuscar.addEventListener("change", function () {
+          const selectedValue = this.value;
 
-            // Verifica se uma opção válida foi selecionada
-            if (selectedValue) {
-              // Redireciona para a URL correspondente
-              window.location.href = selectedValue;
-            }
-          });
-        }
-      });
-    </script>
-  </body>
+          // Verifica se uma opção válida foi selecionada
+          if (selectedValue) {
+            // Redireciona para a URL correspondente
+            window.location.href = selectedValue;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
 </html>

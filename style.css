@@ -66,6 +66,7 @@ header {
   animation: colorChange 7s infinite;
   background-color: linear-gradient(to right, #055f6eff, #052131ff);
 }
+
 .index-title a:hover h1:hover {
   animation: none;
   border-radius: 30px;
