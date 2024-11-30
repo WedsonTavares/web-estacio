@@ -686,25 +686,12 @@ input.cep-form {
     max-width: 100px;
   }
 
-  .nav-equerda,
-  .nav-links {
+ .nav-equerda,
+.nav-links {
     display: none;
-  }
+  } 
 
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    color: #fff;
-  }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
+ 
   .nav-equerda select {
     width: 100px;
     font-size: 14px;
