@@ -1,223 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastre-se</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <style>
-        body{
-  background: linear-gradient(to right, #055f6eff, #052131ff);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-padding-bottom: 100px;
-}
-      </style>
-      <!-- Logotipo -->
-      <div class="logotipo">
-        <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastre-se</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <style>
+      body {
+        background: linear-gradient(to right, #055f6eff, #052131ff);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        padding-bottom: 100px;
+      }
+    </style>
+    <!-- Logotipo -->
+    <div class="logotipo">
+      <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
+    </div>
 
     <!-- Navegação Buscar -->
- <nav class="nav-equerda">
-  <label for="buscar">Buscar</label>
-  <select name="buscar" id="buscar">
-    <option value="">Selecione</option>
-    <option value="PaginaFilme.html?categoria=animes">Animes</option>
-    <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
-    <option value="PaginaFilme.html?categoria=series">Series</option>
-    <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
-  </select>
-</nav>
+    <nav class="nav-equerda">
+      <label for="buscar">Buscar</label>
+      <select name="buscar" id="buscar">
+        <option value="">Selecione</option>
+        <option value="PaginaFilme.html?categoria=animes">Animes</option>
+        <option value="PaginaFilme.html?categoria=filmes">Filmes</option>
+        <option value="PaginaFilme.html?categoria=series">Series</option>
+        <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
+      </select>
+    </nav>
 
-      <!-- Navegação principal -->
-      <nav>
-        <ul class="nav-links">
-          <li><a target="_blank" href="sobre.html">Sobre</a></li>
-          <li><a target="_blank" href="login.html">Login</a></li>
-          <li>
-            <a target="_blank" href="PaginaFilme.html"
-              ><img src="assets/loupe (1).png" alt="Buscar"
-            /></a>
-          </li>
-          <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
-        </ul>
-      </nav>
-    </header>
-
-
-    <!-- Formulário de cadastro -->
-    <div class="container-form">
-      <form id="myForm" action="cadastro.php" method="POST">
-        <!-- Etapa 1: Informações Pessoais -->
-        <div class="step1" id="step1">
-          <h2>Informações Pessoais</h2>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
-
-          <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" name="cpf" required />
-
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <button type="button" id="nextBtn" class="btn-enviar">Próximo</button>
-        </div>
-
-        <!-- Etapa 2: Endereço -->
-        <div class="step2" id="step2" style="display: none">
-          <h2>Endereço</h2>
-          <label for="cep">CEP:</label><br>
-          
-          <input
-            type="text"
-            class="cep-form"
-            id="cep"
-            name="cep"
-            placeholder="Digite seu CEP"
-            required
-            
-            
-          /><button type="button" id="searchAddress" class="btn-form">
-            Buscar Endereço
-          </button><br/>
-
-          <label for="numero">Número:</label>
-          <input
-            type="text"
-            id="numero"
-            name="numero"
-            placeholder="Número do endereço"
-            required
-          />
-
-          <label for="logradouro">Rua:</label>
-          <input
-            type="text"
-            id="logradouro"
-            name="logradouro"
-            placeholder="Rua"
-            required
-          />
-
-          <label for="bairro">Bairro:</label>
-          <input
-            type="text"
-            id="bairro"
-            name="bairro"
-            placeholder="Bairro"
-            required
-          />
-
-          <label for="cidade">Cidade:</label>
-          <input
-            type="text"
-            id="cidade"
-            name="cidade"
-            placeholder="Cidade"
-            required
-          />
-          <label for="estado">Estado</label>
-          <input type="text" id="estado" name="estado" placeholder="Estado" label="estado" maxlength="2" />
-
-        
-          
-          
-
-          <button id="btn-enviar" type="submit" class="btn-enviar">Enviar</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Barra de suporte ao final da página -->
-    <div class="div-contato">
-      <button class="btn-suporte">
-        <a id="suporte" target="_blank" href="suport.html">Suporte</a>
-      </button>
-      <ul class="contato">
+    <!-- Navegação principal -->
+    <nav>
+      <ul class="nav-links">
+        <li><a target="_blank" href="sobre.html">Sobre</a></li>
+        <li><a target="_blank" href="login.html">Login</a></li>
         <li>
-          <a href=""
-            ><img
-              class="img-contato"
-              src="assets/linkedin (1).png"
-              alt="LinkedIn"
-          /></a>
+          <a target="_blank" href="PaginaFilme.html"><img src="assets/loupe (1).png" alt="Buscar" /></a>
         </li>
-        <li>
-          <a target="_blank" href="https://github.com/WedsonTavares/web-estacio"
-            ><img class="img-contato" src="assets/github.png" alt="GitHub"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp"
-          /></a>
-        </li>
+        <li><a target="_blank" href="cadastro.html">Cadastre-se</a></li>
       </ul>
-    </div>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
-    <!-- Script para animação de carregamento -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll("a");
 
-        links.forEach((link) => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const url = this.href;
+  <!-- Formulário de cadastro -->
+  <div class="container-form">
+    <form id="myForm" action="cadastro.php" method="POST">
+      <!-- Etapa 1: Informações Pessoais -->
+      <div class="step1" id="step1">
+        <h2>Informações Pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-            // Cria uma div de carregamento
-            const loading = document.createElement("div");
-            loading.id = "loading";
-            loading.style.position = "fixed";
-            loading.style.top = "0";
-            loading.style.left = "0";
-            loading.style.width = "100%";
-            loading.style.height = "100%";
-            loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-            loading.style.display = "flex";
-            loading.style.justifyContent = "center";
-            loading.style.alignItems = "center";
-            loading.style.color = "#fff";
-            loading.style.fontSize = "2em";
-            loading.innerText = "Carregando...";
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required />
 
-            document.body.appendChild(loading);
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required />
 
-            // Navega para a nova página apos 0.4 segundos
-            setTimeout(() => {
-              window.location.href = url;
-            }, 400);
-          });
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="button" id="nextBtn" class="btn-enviar">Próximo</button>
+      </div>
+
+      <!-- Etapa 2: Endereço -->
+      <div class="step2" id="step2" style="display: none">
+        <h2>Endereço</h2>
+        <label for="cep">CEP:</label><br>
+
+        <input type="text" class="cep-form" id="cep" name="cep" placeholder="Digite seu CEP" required /><button
+          type="button" id="searchAddress" class="btn-form">
+          Buscar Endereço
+        </button><br />
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" placeholder="Número do endereço" required />
+
+        <label for="logradouro">Rua:</label>
+        <input type="text" id="logradouro" name="logradouro" placeholder="Rua" required />
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" placeholder="Bairro" required />
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required />
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" name="estado" placeholder="Estado" label="estado" maxlength="2" />
+
+
+
+
+
+        <button id="btn-enviar" type="submit" class="btn-enviar">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Barra de suporte ao final da página -->
+  <div class="div-contato">
+    <button class="btn-suporte">
+      <a id="suporte" target="_blank" href="suport.html">Suporte</a>
+    </button>
+    <ul class="contato">
+      <li>
+        <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn" /></a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/WedsonTavares/web-estacio"><img class="img-contato"
+            src="assets/github.png" alt="GitHub" /></a>
+      </li>
+      <li>
+        <a href=""><img class="img-contato" src="assets/whatsapp.png" alt="WhatsApp" /></a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Script para animação de carregamento -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          const url = this.href;
+
+          // Cria uma div de carregamento
+          const loading = document.createElement("div");
+          loading.id = "loading";
+          loading.style.position = "fixed";
+          loading.style.top = "0";
+          loading.style.left = "0";
+          loading.style.width = "100%";
+          loading.style.height = "100%";
+          loading.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+          loading.style.display = "flex";
+          loading.style.justifyContent = "center";
+          loading.style.alignItems = "center";
+          loading.style.color = "#fff";
+          loading.style.fontSize = "2em";
+          loading.innerText = "Carregando...";
+
+          document.body.appendChild(loading);
+
+          // Navega para a nova página apos 0.4 segundos
+          setTimeout(() => {
+            window.location.href = url;
+          }, 400);
         });
       });
-    </script>
-           <!-- Script validar os links da Barra Buscar-->
-           <script> document.addEventListener("DOMContentLoaded", function () {
-            const selectBuscar = document.getElementById("buscar");
-          
-            if (selectBuscar) {
-              selectBuscar.addEventListener("change", function () {
-                const selectedValue = this.value;
-          
-                // Verifica se uma opção válida foi selecionada
-                if (selectedValue) {
-                  // Redireciona para a URL correspondente
-                  window.location.href = selectedValue;
-                }
-              });
-            }
-          });</script>
-  </body>
+    });
+  </script>
+  <!-- Script validar os links da Barra Buscar-->
+  <script> document.addEventListener("DOMContentLoaded", function () {
+      const selectBuscar = document.getElementById("buscar");
+
+      if (selectBuscar) {
+        selectBuscar.addEventListener("change", function () {
+          const selectedValue = this.value;
+
+          // Verifica se uma opção válida foi selecionada
+          if (selectedValue) {
+            // Redireciona para a URL correspondente
+            window.location.href = selectedValue;
+          }
+        });
+      }
+    });</script>
+</body>
+
 </html>

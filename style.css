@@ -1,23 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-/* Estilos globais */
+/* Zerando os estilos padrão */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
-
-/* Estilos para o body - Usado em todos os arquivos HTML */
-/* body {
-  background: linear-gradient(to right, #055f6eff, #052131ff);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #fff; 
-
-} */
 
 /* Estilos para a imagem de fundo - Usado em index.html */
 .img-fundo {
@@ -55,6 +44,8 @@ header {
 
 /* ============================================== */
 /* ANIMAÇÃO DA PAGINA INDEX H1 index.html*/
+
+
 .index-title {
   width: 70%;
   display: flex;
@@ -67,7 +58,7 @@ header {
 
 .index-title h1 a {
   font-size: 60px;
-
+  bottom: 300px;
   display: block;
   animation: colorChange 7s infinite;
 }
@@ -123,19 +114,53 @@ button:hover {
 
 /* ============================================== */
 
-/* Estilos para apag-sobre - Usado em todos os arquivos HTML */
-.pag-sobre h2,
-h1 {
+/* Estilos para a página sobre */
+.sobre-container {
+  background: linear-gradient(to right, #055f6eff, #052131ff);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 100px;
+}
+
+.pag-sobre {
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pag-sobre h1, .pag-sobre h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.pag-sobre p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.pag-sobre strong {
+  color: #333;
+}
+
+.pag-sobre h1  {
+  font-size: 36px;
   text-align: center;
-
-  font-size: 35px;
 }
 
-.pragrafo-sobre {
-  text-align: left;
-  font-size: 20px;
+.pag-sobre h2 {
+  font-size: 28px;
+  margin-top: 30px;
 }
 
+.pag-sobre p:last-child {
+  margin-bottom: 0;
+}
 /* ============================================== */
 
 /* Estilos para a nav direita "Sobre - Login - lupa- cadastre-se" */
@@ -431,11 +456,8 @@ input.cep-form {
   cursor: pointer;
   display: block;
 }
-
 /* ============================================== */
 /* Estilos para o grupo de rádio - Usado em cadastro.html */
-
-
 
 .radio-group {
   display: flex;
@@ -457,7 +479,7 @@ input.cep-form {
 
 
 /* ============================================== */
-/* Estilos para A Página Login (Lucas e Wedson)*/
+/* Estilos para A Página Login */
 .wrapper1 {
   width: 420px;
   background: transparent;
@@ -574,10 +596,11 @@ input.cep-form {
 }
 
 .mensagem-erro {
-  color: red;
+  color: rgb(255, 255, 255);
   text-align: center;
   margin-top: -300px;
-  font-size: 30px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /* ============================================== */
@@ -622,36 +645,80 @@ input.cep-form {
 /* ============================================== */
 
 /*              REPONSIVIDADE*/
-@media (max-width: 450px) {
-  .logotipo img {
-    width: 120px;
-    /* Ajuste o tamanho conforme necessário */
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .nav-equerda {
-    width: 100%;
-    justify-content: center;
+  .logotipo {
     margin-bottom: 10px;
   }
 
-  .nav-equerda label,
-  .nav-equerda select {
-    font-size: 12px;
-    margin-left: 0 auto;
-  }
-
+  .nav-equerda,
   .nav-links {
-    width: 100px;
-    justify-content: center;
-    flex-direction: column;
+    display: none;
   }
 
-  .nav-links a {
-    padding: 6px 8px;
-    font-size: 12px;
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 
   .nav-links li {
-    margin-left: 3px;
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 450px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logotipo img {
+    max-width: 100px;
+  }
+
+  .nav-equerda,
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nav-equerda select {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .nav-links a img {
+    max-width: 16px;
   }
 }

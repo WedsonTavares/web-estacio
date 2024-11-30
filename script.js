@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Adiciona um event listener ao botão "Próximo" para avançar para a próxima etapa do formulário
     document.getElementById('nextBtn').addEventListener('click', function() {
       // Esconde a primeira etapa do formulário
       document.getElementById('step1').style.display = 'none';
@@ -9,13 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Adiciona um event listener ao botão "Buscar Endereço" para buscar o endereço com base no CEP
     document.getElementById('searchAddress').addEventListener('click', function() {
-      // Obtém o valor do campo de CEP
+      
       const cep = document.getElementById('cep').value;
-      // Obtém o elemento onde os resultados do endereço serão exibidos
       const addressResult = document.getElementById('addressResult');
   
-      // Limpa qualquer mensagem anterior
-      // addressResult.innerHTML = '';
   
       // Verifica se o CEP é válido (deve ter 8 dígitos e ser numérico)
       if (cep.length !== 8 || isNaN(cep)) {
@@ -58,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Adiciona um event listener ao formulário para lidar com o envio
     document.getElementById('myForm').addEventListener('submit', function(event) {
     
-      // Exibe uma mensagem de sucesso
+      
       alert('Formulário enviado com sucesso!');
       window.open('PaginaFilme.html');
       
@@ -66,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-
+// Script de Validação da página de login
 
 document.addEventListener("DOMContentLoaded", function () {
     const loginForm = document.getElementById("loginForm");
@@ -102,3 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+
+
+
+
+  
