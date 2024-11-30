@@ -83,12 +83,12 @@ document.addEventListener("DOMContentLoaded", function () {
         let estaValido = true;
   
         if (email === "" || !email.includes("@")) {
-          erroEmail.textContent = "Por favor, entre um email válido.";
+          erroEmail.textContent = "Por favor, digite um email válido.";
           estaValido = false;
         }
   
         if (password === "" || password.length < 3) {
-          erroPassword.textContent = "Por favor, entre uma senha válida.";
+          erroPassword.textContent = "Senha muito curta.";
           estaValido = false;
         }
   
