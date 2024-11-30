@@ -45,22 +45,32 @@ header {
 /* ============================================== */
 /* ANIMAÇÃO DA PAGINA INDEX H1 index.html*/
 
-
 .index-title {
-  width: 70%;
+  position: absolute;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   border-radius: 30px;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(40px);
+  top: 250px;
+  left: 18%;
+
 }
 
-.index-title h1 a {
+.index-title a h1 {
   font-size: 60px;
-  bottom: 300px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: colorChange 7s infinite;
+  background-color: linear-gradient(to right, #055f6eff, #052131ff);
+}
+.index-title a:hover h1:hover {
+  animation: none;
+  border-radius: 30px;
+  padding: 10px 10px;
+  transition: 0.05s;
 }
 
 /* ============================================== */
@@ -133,7 +143,8 @@ button:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pag-sobre h1, .pag-sobre h2 {
+.pag-sobre h1,
+.pag-sobre h2 {
   color: #333;
   margin-bottom: 15px;
 }
@@ -148,7 +159,7 @@ button:hover {
   color: #333;
 }
 
-.pag-sobre h1  {
+.pag-sobre h1 {
   font-size: 36px;
   text-align: center;
 }
@@ -161,6 +172,7 @@ button:hover {
 .pag-sobre p:last-child {
   margin-bottom: 0;
 }
+
 /* ============================================== */
 
 /* Estilos para a nav direita "Sobre - Login - lupa- cadastre-se" */
@@ -444,19 +456,6 @@ input.cep-form {
 }
 
 /* ============================================== */
-/* Estilos para o botão de acesso - Usado em todos os arquivos HTML */
-.botao-acesso {
-  background-color: darkseagreen;
-  color: rgb(0, 0, 0);
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 16px;
-  margin: auto;
-  width: auto;
-  cursor: pointer;
-  display: block;
-}
-/* ============================================== */
 /* Estilos para o grupo de rádio - Usado em cadastro.html */
 
 .radio-group {
@@ -579,6 +578,7 @@ input.cep-form {
   align-items: center;
   height: 100vh;
 }
+
 .wrapper1 .register-link1 {
   font-size: 14.5px;
   text-align: center;
@@ -686,12 +686,12 @@ input.cep-form {
     max-width: 100px;
   }
 
- .nav-equerda,
-.nav-links {
+  .nav-equerda,
+  .nav-links {
     display: none;
-  } 
+  }
 
- 
+
   .nav-equerda select {
     width: 100px;
     font-size: 14px;
