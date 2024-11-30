@@ -10,13 +10,12 @@ CineQuest é um site que oferece uma plataforma para buscar e explorar filmes, a
 
 ## Tecnologias Utilizadas
 
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <a href="#" style="padding: 10px 20px; background-color: #E34F26; color: white; text-decoration: none; border-radius: 5px;">HTML5</a>
-  <a href="#" style="padding: 10px 20px; background-color: #1572B6; color: white; text-decoration: none; border-radius: 5px;">CSS3</a>
-  <a href="#" style="padding: 10px 20px; background-color: #F7DF1E; color: black; text-decoration: none; border-radius: 5px;">JavaScript</a>
-  <a href="#" style="padding: 10px 20px; background-color: #777BB4; color: white; text-decoration: none; border-radius: 5px;">PHP</a>
-  <a href="#" style="padding: 10px 20px; background-color: #4479A1; color: white; text-decoration: none; border-radius: 5px;">MySQL</a>
-</div>
+- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
 
 ## Estrutura do Projeto
 
