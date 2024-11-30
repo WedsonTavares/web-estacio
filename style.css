@@ -22,6 +22,8 @@
 /* Estilos para a imagem de fundo - Usado em index.html */
 .img-fundo {
   position: absolute;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   background: url("./assets/loop3.jpg");
@@ -243,7 +245,7 @@ main {
 /* ============================================== */
 /* Estilos para o formulário de cadastro - cadastro.html */
 .container-form {
-  
+
   border-radius: 8px;
   height: 50%;
   margin-top: 75px;
@@ -280,15 +282,17 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-input.cep-form{
-width: 76%;
-padding: 10px;
-margin-bottom: 15px;
-border: 1px solid #ccc;
-border-radius: 4px;
+
+input.cep-form {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 
 }
-#searchAddress{
+
+#searchAddress {
   color: #0c0c0c;
   background-color: #0ea057;
   text-align: center;
@@ -303,17 +307,12 @@ border-radius: 4px;
   margin-left: 20px;
 }
 
-
-
-
 .step1 h2,
 .step2 h2 {
-    font-size: 30px;
-     text-align: center;
-  
-  
-}
+  font-size: 30px;
+  text-align: center;
 
+}
 
 .btn-form {
   color: #0c0c0c;
@@ -328,6 +327,7 @@ border-radius: 4px;
   font-weight: bold;
   border: none;
 }
+
 .btn-enviar {
   color: #0c0c0c;
   background-color: #0ea057;
@@ -340,8 +340,8 @@ border-radius: 4px;
   font-size: 20px;
   font-weight: bold;
   border: none;
-   width: 100%;
-  }
+  width: 100%;
+}
 
 .btn-form:hover {
   background-color: #0c6d7a;
@@ -461,7 +461,6 @@ border-radius: 4px;
 .wrapper1 {
   width: 420px;
   background: transparent;
-  padding: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,9 +469,7 @@ border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   border-radius: 10px;
-  padding: 30px 40px;
-  position: fixed;
-  top: 200px;
+  margin: 0 auto;
 }
 
 .wrapper1 h1 {
@@ -494,7 +491,7 @@ border-radius: 4px;
   border: none;
   outline: none;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
+  border-radius: 10px;
   font-size: 16px;
   color: #fff;
   padding: 20px 45px 20px 20px;
@@ -554,6 +551,12 @@ border-radius: 4px;
   font-weight: 600;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .wrapper1 .register-link1 {
   font-size: 14.5px;
   text-align: center;
