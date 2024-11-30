@@ -8,7 +8,7 @@
   <title>CineQuest</title>
 </head>
 
-<body style="min-height: auto">
+<body>
   <header>
     <!-- Logotipo -->
     <div class="logotipo">
@@ -49,11 +49,11 @@
     <div class="ajuda">
       <h1>Como posso ajudar?</h1>
       <input type="search" placeholder="Busque por palavra chave"
-        style="color: #055f6eff; width: 90%; height: 25px; border-radius: 8px" />
+        style="width: 90%; height: 30px; border-radius: 8px; text-align: center;" />
     </div>
 
     <!-- Seção de suporte -->
-    <div class="suporte" style="border-top-left-radius: 8px; border-top-right-radius: 8px">
+    <div class="suporte">
       <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
         <a class="sup">
           <h3>Dúvida</h3>
@@ -70,7 +70,7 @@
         </a>
       </div>
     </div>
-    <div class="suporte" style="border-bottom-right-radius: 8px; border-bottom-left-radius: 8px">
+    <div class="suporte">
       <div class="but_sup" onclick="window.location.href='paginaContrucao.html'">
         <a class="sup">
           <h3>FAQ</h3>
@@ -115,8 +115,6 @@
         link.addEventListener("click", function (event) {
           event.preventDefault();
           const url = this.href;
-
-          // Cria a div de carregamento
           const loading = document.createElement("div");
           loading.id = "loading";
           loading.style.position = "fixed";

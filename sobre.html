@@ -22,6 +22,7 @@
       <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
     </select>
   </nav>
+  <!-- Navegação principal -->
   <nav>
     <ul class="nav-links">
       <li><a target="_blank" href="sobre.html">Sobre</a></li>
@@ -134,8 +135,6 @@
         link.addEventListener("click", function (event) {
           event.preventDefault();
           const url = this.href;
-
-          // Cria o elemento de loading
           const loading = document.createElement("div");
           loading.id = "loading";
           loading.style.position = "fixed";

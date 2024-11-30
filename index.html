@@ -11,14 +11,12 @@
 <body>
   <!-- Imagem de fundo -->
   <div class="img-fundo"></div>
-
   <!-- Cabeçalho -->
   <header>
     <!-- Logotipo principal-->
     <div class="logotipo">
       <a href="index.html"><img src="assets/logo2.png" alt="Logotipo" /></a>
     </div>
-
     <!-- Navegação Buscar -->
     <nav class="nav-equerda">
       <label for="buscar">Buscar</label>
@@ -30,7 +28,6 @@
         <option value="PaginaFilme.html?categoria=jogos">Jogos</option>
       </select>
     </nav>
-
     <!-- Navegação principal -->
     <nav>
       <ul class="nav-links">
@@ -48,13 +45,11 @@
     </nav>
   </header>
 
-
   <div class="index-title">
     <a href="PaginaFilme.html">
       <h1>Começe Assistir Agora !!</h1>
     </a>
   </div>
-
 
   <!-- Barra de suporte ao final da página -->
   <div class="div-contato">
@@ -85,8 +80,6 @@
         link.addEventListener("click", function (event) {
           event.preventDefault();
           const url = this.href;
-
-          // Cria o elemento de loading
           const loading = document.createElement("div");
           loading.id = "loading";
           loading.style.position = "fixed";

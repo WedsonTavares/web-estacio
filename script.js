@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-
     // URL da API para buscar o endereço com base no CEP
     const url = `https://viacep.com.br/ws/${cep}/json/`;
     console.log(cep)
@@ -44,8 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
           document.getElementById('cidade').value = data.localidade;
           document.getElementById('estado').value = data.uf;
           console.log(data);
-
-
         }
       })
 
@@ -54,13 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Adiciona um event listener ao formulário para lidar com o envio
   document.getElementById('myForm').addEventListener('submit', function (event) {
 
-
     alert('Formulário enviado com sucesso!');
     window.open('PaginaFilme.html');
 
   });
 });
-
 
 // Script de Validação da página de login
 

@@ -54,10 +54,13 @@
 
   <!-- Formulário de cadastro -->
   <div class="container-form">
+
     <form id="myForm" action="cadastro.php" method="POST">
       <!-- Etapa 1: Informações Pessoais -->
       <div class="step1" id="step1">
+
         <h2>Informações Pessoais</h2>
+
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required />
 
@@ -75,14 +78,16 @@
 
       <!-- Etapa 2: Endereço -->
       <div class="step2" id="step2" style="display: none">
+
         <h2>Endereço</h2>
+
         <label for="cep">CEP:</label><br>
-
-        <input type="text" class="cep-form" id="cep" name="cep" placeholder="Digite seu CEP" required /><button
-          type="button" id="searchAddress" class="btn-form">
+        <input type="text" class="cep-form" id="cep" name="cep" placeholder="Digite seu CEP" required />
+        <button type="button" id="searchAddress" class="btn-form">
           Buscar Endereço
-        </button><br />
+        </button>
 
+        <br />
         <label for="numero">Número:</label>
         <input type="text" id="numero" name="numero" placeholder="Número do endereço" required />
 
@@ -94,12 +99,9 @@
 
         <label for="cidade">Cidade:</label>
         <input type="text" id="cidade" name="cidade" placeholder="Cidade" required />
+
         <label for="estado">Estado</label>
         <input type="text" id="estado" name="estado" placeholder="Estado" label="estado" maxlength="2" />
-
-
-
-
 
         <button id="btn-enviar" type="submit" class="btn-enviar">Enviar</button>
       </div>
@@ -108,9 +110,11 @@
 
   <!-- Barra de suporte ao final da página -->
   <div class="div-contato">
+
     <button class="btn-suporte">
       <a id="suporte" target="_blank" href="suport.html">Suporte</a>
     </button>
+
     <ul class="contato">
       <li>
         <a href=""><img class="img-contato" src="assets/linkedin (1).png" alt="LinkedIn" /></a>
@@ -130,13 +134,10 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const links = document.querySelectorAll("a");
-
       links.forEach((link) => {
         link.addEventListener("click", function (event) {
           event.preventDefault();
           const url = this.href;
-
-          // Cria uma div de carregamento
           const loading = document.createElement("div");
           loading.id = "loading";
           loading.style.position = "fixed";
