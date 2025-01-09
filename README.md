@@ -81,14 +81,14 @@ A intenção do código é criar uma experiência de usuário agradável e intui
 
 ## Contribuição - Grupo 5 - ARA0062 
 
-José Wedson Tavares   - 202403321696
+José Wedson Tavares   
 
-Felipe de Sa Coutinho - 202402347225
+Felipe de Sa Coutinho
 
-Lucas Jatobá Monteiro - 202408274981
+Lucas Jatobá Monteiro
 
-Kelvin Gabriel de S. Gama-202408740662
+Kelvin Gabriel de S. Gama
 
-Marcos Bezerra Junior - 202404255069
+Marcos Bezerra Junior 
 
 
